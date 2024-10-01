@@ -17,32 +17,4 @@ items:
   target: "/organizations/"
   kind: page
   children: []
-- title: Agenda
-  target: "/agenda/"
-  kind: page
-  children: []
-- title: Diplomas
-  target: "/diplomas/"
-  kind: page
-  children: []
-- title: Programs
-  target: "/programs/"
-  kind: page
-  children: []
-- title: Volumes
-  target: "/volumes/"
-  kind: page
-  children: []
-- title: Papers
-  target: "/papers/"
-  kind: page
-  children: []
-- title: HAL publications
-  target: "/publications/"
-  kind: page
-  children: []
-- title: Campus
-  target: "/campus/"
-  kind: page
-  children: []
 
