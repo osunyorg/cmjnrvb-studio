@@ -2,19 +2,19 @@
 title: Main menu
 items:
 - title: Posts
-  target: "/posts/"
+  target: "/en/posts/"
   kind: page
   children: []
 - title: Projects
-  target: "/projects/"
+  target: "/en/projects/"
   kind: page
   children: []
 - title: Team
-  target: "/team/"
+  target: "/en/team/"
   kind: page
   children: []
 - title: Organizations
-  target: "/organizations/"
+  target: "/en/organizations/"
   kind: page
   children: []
 
