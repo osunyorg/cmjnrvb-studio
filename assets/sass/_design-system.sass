@@ -1,0 +1,87 @@
+body
+    letter-spacing: -0.01em
+
+h1, .h1, h2, .h2, h3, .h3
+    letter-spacing: -0.04em
+
+h4, .h4
+    letter-spacing: -0.02em
+
+.btn, .button
+    background: $color-action-background
+    line-height: 1
+    padding-top: 6px
+    padding-bottom: 7px
+    &[target="_blank"]:not(.icon)
+        &:after
+            display: none
+    &:hover
+        background: $color-text
+        color: $color-background
+
+// .document-content
+//     z-index: 10
+
+header#document-header
+    nav.primary-menu
+        @include media-breakpoint-down(md)
+            .header-button
+                display: none
+        .menu
+            a
+                @extend .btn
+            @include media-breakpoint-down(md)
+                display: block
+                margin-top: $header-nav-padding-y
+                position: absolute
+                right: var(--grid-gutter)
+                top: 0
+
+footer#document-footer
+    padding: space(6) space(1)
+    > .container:first-child
+        display: none
+    .nav-legal
+        display: none
+    .container + .container
+        display: flex
+        align-items: end
+        gap: space(12)
+        margin-top: 0
+        > * + *
+            margin-top: 0
+        a, span, small
+            @include body-text
+            line-height: 1
+            display: inline-block
+        a
+            text-decoration: underline
+            text-underline-offset: space(1)
+            &::after
+                display: none
+    .footer-social
+        order: 0
+    .nav-social
+        display: flex
+        align-items: end
+        gap: space(12)
+    @include media-breakpoint-up(md)
+        text-align: right
+        .container + .container
+            align-items: baseline
+            justify-content: end
+    @include media-breakpoint-down(md)
+        padding-bottom: space(3)
+        .nav-social
+            flex-direction: column-reverse
+            align-items: start
+            gap: space(2)
+        .container + .container
+            justify-content: space-between
+    @include media-breakpoint-up(desktop)
+        left: auto
+        position: fixed
+        bottom: 0
+        right: 0
+        .container
+            width: auto

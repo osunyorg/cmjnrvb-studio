@@ -1,0 +1,82 @@
+.block-posts--list
+    .top
+        margin-bottom: 0
+        a
+            text-transform: none
+            @include h3
+            letter-spacing: -0.04em
+            &::after
+                display: none
+    article
+        .post-meta
+            display: none
+        .media 
+            img
+                aspect-ratio: auto
+        a[target="_blank"]
+            &::after
+                display: none
+        h2 a
+            @include link
+        h2, .post-categories
+            @include h3
+            letter-spacing: -0.04em
+            margin: 0
+        .post-categories
+            gap: 0
+            li
+                @include h3
+                color: $color-accent
+                + li
+                    &:before
+                        content: ' + '
+    @include media-breakpoint-down(desktop)
+        .top
+            margin-bottom: space(4)
+            a
+                @include h2
+        article
+            h2 a
+                text-decoration-color: inherit
+                text-underline-offset: space(1)
+            .media 
+                img
+                    border-radius: space(2)
+    @include media-breakpoint-up(desktop)
+        article
+            position: static !important
+            display: block
+            padding: space(1) 0 0 !important
+            margin: 0 !important
+            .post-content
+                width: auto !important
+                position: relative
+                z-index: 2
+                display: flex
+                gap: space(2)
+            .post-categories
+                opacity: 0
+            .media
+                pointer-events: none
+                opacity: 0
+                width: auto !important
+                position: absolute !important
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: contain
+            &.portrait, &.square
+                .media
+                    top: space(27)
+                    bottom: space(27)
+                    left: space(50)
+                    right: space(50)
+            &.landscape
+                .media
+                    top: space(50)
+                    bottom: space(50)
+                    left: space(10)
+                    right: space(10)
+            &:hover
+                .media, .post-categories
+                    opacity: 1

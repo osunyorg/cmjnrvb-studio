@@ -1,0 +1,60 @@
+.page__home
+    .hero
+        min-height: 0
+        padding: 0
+        .content
+            padding-top: space(12)
+            .hero-text
+                margin-top: 0
+                width: auto
+                @include media-breakpoint-up(md)
+                    --h1-size: #{$h1-size-desktop}
+
+    .block-posts--list
+        .top
+            pointer-events: none
+        article
+            border-bottom: 0
+        @include media-breakpoint-up(desktop)
+            position: fixed
+            padding-bottom: space(6)
+            height: 100%
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            min-height: 80vh
+            display: flex
+            justify-content: end
+            align-items: end
+            padding-top: var(--header-height) !important
+        @include media-breakpoint-between(md, desktop)
+            .list
+                display: flex
+                flex-wrap: wrap
+                gap: var(--grid-gutter)
+                article
+                    padding-bottom: space(38)
+                article + article
+                    margin-top: 0
+                article:nth-child(6n + 1)
+                    width: columns(7)
+                article:nth-child(6n + 2)
+                    width: columns(5)
+                article:nth-child(6n + 3),
+                article:nth-child(6n + 6)
+                    width: columns(12)
+                    padding-left: columns(3.5)
+                    padding-right: columns(3.5)
+                article:nth-child(6n + 4)
+                    width: columns(5)
+                article:nth-child(6n + 5)
+                    width: columns(7)
+        @include media-breakpoint-down(desktop)
+            article
+                margin-top: 0
+                padding-bottom: space(10)
+                .media
+                    max-width: none
+                .post-content, .post-categories
+                    padding-top: space(2)
