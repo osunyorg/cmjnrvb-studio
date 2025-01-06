@@ -4,20 +4,18 @@ baseURL: https://cmjnrb-studio.cmjnrvb.osuny.site
 
 ## LANGUAGE
 defaultContentLanguage: en
-defaultContentLanguageInSubdir: false
+defaultContentLanguageInSubdir: true
 
 ## CACHE
 deployment:
   matchers:
-    - pattern: "^.+\\.(woff2|woff|svg|ttf|eot|js|css)$"
+    - pattern: "^.+\\.(woff2|woff|svg|ttf|otf|eot|js|css)$"
       cacheControl: "max-age=31536000, no-transform, public"
       gzip: true
     - pattern: "^.+\\.(png|jpg|jpeg|gif|webp)$"
       cacheControl: "max-age=31536000, no-transform, public"
       gzip: false
-
-## DEUXFLEURS
-deployment:
+  ## DEUXFLEURS
   targets:
     - name: "production"
       URL: "s3://cmjnrb-studio.cmjnrvb.osuny.site?endpoint=garage.deuxfleurs.fr&s3ForcePathStyle=true&region=garage&awssdk=v1"
