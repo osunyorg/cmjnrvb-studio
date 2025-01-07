@@ -15,8 +15,8 @@ items:
   children: []
   path: "/posts"
   file: content/fr/posts/_index.html
-- title: Équipe
-  target: "/fr/equipe/"
+- title: About
+  target: "/fr/about/"
   kind: page
   new_tab: false
   children: []
