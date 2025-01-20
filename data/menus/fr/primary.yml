@@ -9,7 +9,7 @@ items:
   path: "/projects"
   file: content/fr/projects/_index.html
 - title: Archive
-  target: "/fr/archive/"
+  target: "/fr/actualites/"
   kind: page
   new_tab: false
   children: []
