@@ -1,6 +1,5 @@
 theme: osuny
 paginate: 18
-enableRobotsTXT: true
 removePathAccents: true
 params:
   summary:
@@ -10,3 +9,9 @@ params:
   projects:
     index:
       taxonomies: true
+      options:
+        categories: false
+  image_sizes:
+    design_system:
+      lightbox:
+        disabled: true
