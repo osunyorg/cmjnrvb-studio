@@ -1,11 +1,10 @@
 theme: osuny
-paginate: 18
-removePathAccents: true
+_merge: deep
 params:
   summary:
     position: hero
   search:
-    active: false  
+    active: false
   projects:
     index:
       taxonomies: true
