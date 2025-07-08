@@ -5,10 +5,9 @@ params:
   summary:
     position: hero
   search:
-    active: false  
+    active: false
   projects:
     index:
-      taxonomies: true
       options:
         categories: false
   image_sizes:

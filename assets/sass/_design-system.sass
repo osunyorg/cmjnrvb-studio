@@ -8,16 +8,12 @@ h4, .h4
     letter-spacing: -0.02em
 
 .btn, .button
-    background: $color-action-background
     line-height: 1
     padding-top: 6px
     padding-bottom: 7px
     &[target="_blank"]:not(.icon)
         &:after
             display: none
-    &:hover
-        background: $color-text
-        color: $color-background
 
 // .document-content
 //     z-index: 10
@@ -85,3 +81,9 @@ footer#document-footer
         right: 0
         .container
             width: auto
+
+.taxonomies-list
+    .dropdown
+        button
+            @extend .button
+            margin: auto
