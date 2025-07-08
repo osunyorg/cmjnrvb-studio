@@ -6,18 +6,16 @@ en:
   contentDir: content/en
   languageCode: en
   languageName: English
+  buildFuture: true
   params:
     contact_details:
 
-  permalinks:
-    pages_categories: /:slug/
-    projects: /projects/:year-:slug/
-    projects_categories: /projects/:slug/
   taxonomies:
     administrator: administrators
     author: authors
     diploma: diplomas
     events_category: events_categories
+    jobs_category: jobs_categories
     location: locations
     organizations_category: organizations_categories
     pages_category: pages_categories
@@ -34,18 +32,16 @@ fr:
   contentDir: content/fr
   languageCode: fr
   languageName: Français
+  buildFuture: true
   params:
     contact_details:
 
-  permalinks:
-    pages_categories: /:slug/
-    projects: /projets/:year-:slug/
-    projects_categories: /projets/:slug/
   taxonomies:
     administrator: administrators
     author: authors
     diploma: diplomas
     events_category: events_categories
+    jobs_category: jobs_categories
     location: locations
     organizations_category: organizations_categories
     pages_category: pages_categories

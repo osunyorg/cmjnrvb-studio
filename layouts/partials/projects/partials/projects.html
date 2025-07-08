@@ -5,6 +5,6 @@
     <p>{{ i18n "categories.no_project" }}</p>
   {{ end }}
   {{ range $paginator.Pages }}
-    {{ partial "projects/project.html" (dict "project" . )}}
+    {{/*  {{ partial "projects/partials/project.html" (dict "project" . )}}  */}}
   {{ end }}
 </div>

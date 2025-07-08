@@ -2,6 +2,11 @@
 
 baseURL: https://cmjnrb-studio.cmjnrvb.osuny.site
 
+## OSUNY
+osuny:
+  website:
+    id: 07fb5e40-4c7f-4269-913d-a2ed4a5463fc
+
 ## LANGUAGE
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
@@ -16,6 +21,7 @@ deployment:
       cacheControl: "max-age=31536000, no-transform, public"
       gzip: false
   ## DEUXFLEURS
+  workers: 2
   targets:
     - name: "production"
       URL: "s3://cmjnrb-studio.cmjnrvb.osuny.site?endpoint=garage.deuxfleurs.fr&s3ForcePathStyle=true&region=garage&awssdk=v1"

@@ -1,6 +1,5 @@
 theme: osuny
-paginate: 18
-removePathAccents: true
+_merge: deep
 params:
   summary:
     position: hero
