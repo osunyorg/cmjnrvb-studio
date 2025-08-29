@@ -55,10 +55,10 @@ footer#document-footer
                 content: ''
         .footer-cta li:first-of-type
             @extend .btn
-            --btn-color: #{$color-background}
-            --btn-background: #{$color-text}
+            --btn-color: var(--color-background)
+            --btn-background: var(--color-text)
             --btn-border: none
-            --btn-hover-color: #{$color-text}
+            --btn-hover-color: var(--color-text)
             --btn-hover-background: #{alphaColor($color-accent, 0.85)}
             --btn-hover-border: var(--btn-border)
             text-decoration: none
