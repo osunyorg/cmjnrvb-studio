@@ -150,10 +150,13 @@
             @include h3
         .block-gallery--grid
             @include media-breakpoint-up(desktop)
-                .gallery
-                    align-items: center
-                    > *
-                        flex: 1
+                .gallery > *
+                    flex: 1
+        .block:first-child
+            &.block-gallery--grid
+                @include media-breakpoint-up(desktop)
+                    .gallery
+                        align-items: center
         .block-class-chapter-with-notes-right
             .rich-text, 
             .notes

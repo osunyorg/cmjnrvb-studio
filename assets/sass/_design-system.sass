@@ -35,13 +35,11 @@ header#document-header
 
 footer#document-footer
     border-top: 1px solid var(--color-text)
-    padding-bottom: space(29)
-    padding-top: var(--grid-gutter)
+    padding-bottom: space(8)
+    padding-top: space(4)
     a
         text-decoration: underline
     .container:first-child
-        flex-direction: column
-        position: relative
         padding-bottom: 0
         .footer-menu
             @include h1
@@ -55,19 +53,32 @@ footer#document-footer
             text-align: left
             li a::after
                 content: ''
-            .email
-                @extend .btn
-                --btn-color: #{$color-background}
-                --btn-background: #{$color-text}
-                --btn-border: none
-                --btn-hover-color: #{$color-text}
-                --btn-hover-background: #{alphaColor($color-accent, 0.85)}
-                --btn-hover-border: var(--btn-border)
-                a
-                    color: inherit
-                    text-decoration: none
+        .footer-cta li:first-of-type
+            @extend .btn
+            --btn-color: #{$color-background}
+            --btn-background: #{$color-text}
+            --btn-border: none
+            --btn-hover-color: #{$color-text}
+            --btn-hover-background: #{alphaColor($color-accent, 0.85)}
+            --btn-hover-border: var(--btn-border)
+            text-decoration: none
+            text-align: center
+            width: 100%
+            a
+                @include h1
+                color: inherit
+                text-decoration: none
+                &::after
+                    content: ''
         @include media-breakpoint-down(md)
+            display: flex
             flex-direction: column
+            .footer-cta 
+                margin-top: 0
+                order: -1
+                margin-bottom: space(8)
+                li:first-of-type
+                    padding: space(10)
             .footer-menu
                 @include h2
                 li + li
@@ -75,16 +86,9 @@ footer#document-footer
             .footer-social
                 @include body-text
         @include media-breakpoint-up(md)
-            .email
-                --btn-padding: space(18)
-                position: absolute
-                left: offset(6)
-                top: 0
+            .footer-cta li:first-of-type
+                padding: space(18)
                 width: columns(6)
-                a
-                    @include h1
-            + .container
-                margin-top: space(56)
     .container:nth-child(2)
         .nav-legal,
         .footer-credit,
@@ -105,6 +109,9 @@ footer#document-footer
                 gap: space(4)
             .footer-legals
                 width: columns(6)
+    @include media-breakpoint-up(md)
+        padding-top: space(2)
+        padding-bottom: space(29)
 
 .taxonomies-list
     .dropdown

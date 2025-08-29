@@ -1,20 +1,22 @@
 <div class="container">
   {{ $footer_primary := partial "GetMenu" "footer" }}
   {{ $footer_cta := partial "GetMenu" "footer-contact" }}
-  {{ if $footer_primary }}
-    {{ partial "commons/menu.html" (dict
-        "kind" "footer"
-        "level" 1
-        "context" .
-        "class" "footer-menu"
-    )}}
-  {{ end }}
-  <div class="footer-social">
-    {{ partial "footer/social.html" . }}
+  <div class="footer-nav">
+    {{ if $footer_primary }}
+      {{ partial "commons/menu.html" (dict
+          "kind" "footer"
+          "level" 1
+          "context" .
+          "class" "footer-menu"
+      )}}
+    {{ end }}
+    <div class="footer-social">
+      {{ partial "footer/social.html" . }}
+    </div>
   </div>
   {{ if $footer_cta }}
     {{ partial "commons/menu.html" (dict
-        "kind" "footer"
+        "kind" "footer-contact"
         "level" 1
         "context" .
         "class" "footer-cta"
