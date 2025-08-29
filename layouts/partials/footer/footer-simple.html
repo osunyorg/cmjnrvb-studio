@@ -1,23 +1,32 @@
 <div class="container">
-  <div class="footer-nav">
-    {{ $ecosystem_list := partial "GetMenu" "footer" }}
-    {{ if $ecosystem_list }}
-      {{ partial "commons/menu.html" (dict
-          "kind" "footer"
-          "level" 1
-          "context" .
-          "class" "footer-menu"
-        )}}
-    {{ end }}
+  {{ $footer_primary := partial "GetMenu" "footer" }}
+  {{ $footer_cta := partial "GetMenu" "footer-contact" }}
+  {{ if $footer_primary }}
+    {{ partial "commons/menu.html" (dict
+        "kind" "footer"
+        "level" 1
+        "context" .
+        "class" "footer-menu"
+    )}}
+  {{ end }}
   <div class="footer-social">
     {{ partial "footer/social.html" . }}
   </div>
+  {{ if $footer_cta }}
+    {{ partial "commons/menu.html" (dict
+        "kind" "footer"
+        "level" 1
+        "context" .
+        "class" "footer-cta"
+    )}}
+  {{ end }}
   {{ if and site.Params.search.active (in site.Params.search.positions "footer") }}
     <div class="footer-search">
       {{ partial "commons/search/button.html" "footer" }}
     </div>
   {{ end }}
 </div>
+
 <div class="container">
   <div>
     <p>{{ i18n "footer.credit" }}</p>

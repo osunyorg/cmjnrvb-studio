@@ -35,51 +35,76 @@ header#document-header
 
 footer#document-footer
     border-top: 1px solid var(--color-text)
-//     padding: space(6) space(1)
-//     .nav-legal
-//         display: none
-//     .container + .container
-//         display: flex
-//         align-items: end
-//         gap: space(12)
-//         margin-top: 0
-//         > * + *
-//             margin-top: 0
-//         a, span, small
-//             @include body-text
-//             line-height: 1
-//             display: inline-block
-//         a
-//             text-decoration: underline
-//             text-underline-offset: space(1)
-//             &::after
-//                 display: none
-//     .footer-social
-//         order: 0
-//     .nav-social
-//         display: flex
-//         align-items: end
-//         gap: space(12)
-//     @include media-breakpoint-up(md)
-//         text-align: right
-//         .container + .container
-//             align-items: baseline
-//             justify-content: end
-//     @include media-breakpoint-down(md)
-//         padding-bottom: space(3)
-//         .nav-social
-//             flex-direction: column-reverse
-//             align-items: start
-//             gap: space(2)
-//         .container + .container
-//             justify-content: space-between
-//     @include media-breakpoint-up(desktop)
-//         left: auto
-//         position: fixed
-//         bottom: 0
-//         right: 0
-//         .container
-//             width: auto
+    padding-bottom: space(29)
+    padding-top: var(--grid-gutter)
+    a
+        text-decoration: underline
+    .container:first-child
+        flex-direction: column
+        position: relative
+        padding-bottom: 0
+        .footer-menu
+            @include h1
+            a
+                text-decoration: none
+            .footer-i18n
+                display: none
+            + *
+                margin-top: space(10)
+        .footer-social
+            text-align: left
+            li a::after
+                content: ''
+            .email
+                @extend .btn
+                --btn-color: #{$color-background}
+                --btn-background: #{$color-text}
+                --btn-border: none
+                --btn-hover-color: #{$color-text}
+                --btn-hover-background: #{alphaColor($color-accent, 0.85)}
+                --btn-hover-border: var(--btn-border)
+                a
+                    color: inherit
+                    text-decoration: none
+        @include media-breakpoint-down(md)
+            flex-direction: column
+            .footer-menu
+                @include h2
+                li + li
+                    margin-top: 0
+            .footer-social
+                @include body-text
+        @include media-breakpoint-up(md)
+            .email
+                --btn-padding: space(18)
+                position: absolute
+                left: offset(6)
+                top: 0
+                width: columns(6)
+                a
+                    @include h1
+            + .container
+                margin-top: space(56)
+    .container:nth-child(2)
+        .nav-legal,
+        .footer-credit,
+        .footer-i18n span
+            @include body-text
+        .footer-legals .footer-i18n
+            display: none
+        @include media-breakpoint-down(md)
+            > * + *
+                margin-top: space(2)
+            .footer-credit,
+            .footer-i18n
+                margin-top: space(2)
+        @include media-breakpoint-up(md)
+            > div
+                display: flex
+                align-items: baseline
+                gap: space(4)
+            .footer-legals
+                width: columns(6)
 
 .taxonomies-list
     .dropdown
