@@ -9,6 +9,12 @@ params:
     index:
       options:
         categories: false
+    single:
+      taxonomies:
+        position: hero
+        show_name: true
+    share_links:
+      enabled: false
   image_sizes:
     design_system:
       lightbox:
