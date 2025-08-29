@@ -22,4 +22,9 @@ items:
   children: []
   path: "/persons"
   file: content/fr/persons/_index.html
+- title: Contact
+  target: mailto:bonjour@cmjnrvb.net
+  kind: url
+  new_tab: true
+  children: []
 
