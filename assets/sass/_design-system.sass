@@ -34,53 +34,52 @@ header#document-header
                 top: 0
 
 footer#document-footer
-    padding: space(6) space(1)
-    > .container:first-child
-        display: none
-    .nav-legal
-        display: none
-    .container + .container
-        display: flex
-        align-items: end
-        gap: space(12)
-        margin-top: 0
-        > * + *
-            margin-top: 0
-        a, span, small
-            @include body-text
-            line-height: 1
-            display: inline-block
-        a
-            text-decoration: underline
-            text-underline-offset: space(1)
-            &::after
-                display: none
-    .footer-social
-        order: 0
-    .nav-social
-        display: flex
-        align-items: end
-        gap: space(12)
-    @include media-breakpoint-up(md)
-        text-align: right
-        .container + .container
-            align-items: baseline
-            justify-content: end
-    @include media-breakpoint-down(md)
-        padding-bottom: space(3)
-        .nav-social
-            flex-direction: column-reverse
-            align-items: start
-            gap: space(2)
-        .container + .container
-            justify-content: space-between
-    @include media-breakpoint-up(desktop)
-        left: auto
-        position: fixed
-        bottom: 0
-        right: 0
-        .container
-            width: auto
+    border-top: 1px solid var(--color-text)
+//     padding: space(6) space(1)
+//     .nav-legal
+//         display: none
+//     .container + .container
+//         display: flex
+//         align-items: end
+//         gap: space(12)
+//         margin-top: 0
+//         > * + *
+//             margin-top: 0
+//         a, span, small
+//             @include body-text
+//             line-height: 1
+//             display: inline-block
+//         a
+//             text-decoration: underline
+//             text-underline-offset: space(1)
+//             &::after
+//                 display: none
+//     .footer-social
+//         order: 0
+//     .nav-social
+//         display: flex
+//         align-items: end
+//         gap: space(12)
+//     @include media-breakpoint-up(md)
+//         text-align: right
+//         .container + .container
+//             align-items: baseline
+//             justify-content: end
+//     @include media-breakpoint-down(md)
+//         padding-bottom: space(3)
+//         .nav-social
+//             flex-direction: column-reverse
+//             align-items: start
+//             gap: space(2)
+//         .container + .container
+//             justify-content: space-between
+//     @include media-breakpoint-up(desktop)
+//         left: auto
+//         position: fixed
+//         bottom: 0
+//         right: 0
+//         .container
+//             width: auto
 
 .taxonomies-list
     .dropdown

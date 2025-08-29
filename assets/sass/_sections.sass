@@ -146,12 +146,14 @@
     .hero
         @extend %high-hero
     .blocks
+        .block-title
+            @include h3
         .block-gallery--grid
             @include media-breakpoint-up(desktop)
-                .gallery > *
-                    flex: 1
-                    img
-                        border-radius: $images-border-radius
+                .gallery
+                    align-items: center
+                    > *
+                        flex: 1
         .block-class-chapter-with-notes-right
             .rich-text, 
             .notes
