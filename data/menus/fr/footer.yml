@@ -1,0 +1,25 @@
+---
+title: Footer
+items:
+- title: Projets
+  target: "/fr/projets/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/projects"
+  file: content/fr/projects/_index.html
+- title: Archives
+  target: "/fr/archives/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/archives"
+  file: content/fr/pages/archives/_index.html
+- title: Information
+  target: "/fr/information/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/persons"
+  file: content/fr/persons/_index.html
+

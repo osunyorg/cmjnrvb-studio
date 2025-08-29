@@ -35,6 +35,23 @@ fr:
   buildFuture: true
   params:
     contact_details:
+      emails:
+        email:
+          label: >-
+            bonjour@cmjnrvb.net
+          value: >-
+            mailto:bonjour@cmjnrvb.net
+      social_networks:
+        instagram:
+          label: >-
+            cmjn_rvb
+          value: >-
+            https://instagram.com/cmjn_rvb
+        linkedin:
+          label: >-
+            takumi
+          value: >-
+            https://www.linkedin.com/in/takumi/
 
   taxonomies:
     administrator: administrators
