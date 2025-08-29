@@ -97,9 +97,27 @@
                 border-radius: $images-border-radius
 
 .block-gallery,
-.block-images
+.block-image,
+.block-siblings-navigation
     img
         border-radius: $images-border-radius
+
+.block-gallery,
+.block-image,
+    .projects__page &
+        --block-space-y: #{var(--grid-gutter)}
+
+.block-gallery
+    @include in-page-without-sidebar
+        .gallery
+            @include grid(2)
+
+.block-image
+    &.image-landscape
+        @include in-page-without-sidebar
+            figure picture
+                margin-left: 0
+                margin-right: 0
 
 .block-call_to_action
     .call_to_action

@@ -5,6 +5,9 @@ params:
     position: hero
   search:
     active: false
+  i18n:
+    positions:
+      - footer
   projects:
     index:
       options:
@@ -19,3 +22,11 @@ params:
     design_system:
       lightbox:
         disabled: true
+    blocks:
+      gallery:
+        grid:
+          desktop:  860
+    sections:
+      projects:
+        hero_single:
+          desktop:  1729

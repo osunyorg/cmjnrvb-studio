@@ -18,13 +18,16 @@ h4, .h4
 // .document-content
 //     z-index: 10
 
+.breadcrumb-nav
+    @extend .sr-only
+
 header#document-header
     nav.primary-menu
         @include media-breakpoint-down(md)
             .header-button
                 display: none
         .menu
-            a
+            a[target="_blank"]
                 @extend .btn
             @include media-breakpoint-down(md)
                 display: block
