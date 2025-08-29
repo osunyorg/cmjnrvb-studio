@@ -35,12 +35,6 @@ fr:
   buildFuture: true
   params:
     contact_details:
-      emails:
-        email:
-          label: >-
-            bonjour@cmjnrvb.net
-          value: >-
-            mailto:bonjour@cmjnrvb.net
       social_networks:
         instagram:
           label: >-

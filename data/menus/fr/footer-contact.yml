@@ -1,0 +1,9 @@
+---
+title: Footer contact
+items:
+- title: Contact
+  target: mailto:bonjour@cmjnrvb.net
+  kind: url
+  new_tab: true
+  children: []
+
