@@ -152,16 +152,17 @@
                     flex: 1
                     img
                         border-radius: $images-border-radius
-        .block-class-chapter
-            &-left,
-            &-right
-                .rich-text p
+        .block-class-chapter-with-notes-right
+            .rich-text, 
+            .notes
+                p
                     @include h1
+                    b
+                        @include h3
+                        display: block
             @include media-breakpoint-up(desktop)
-                &-left
-                    margin-top: 0
-                    width: columns(6)
-                &-right
-                    width: columns(6)
-                    position: absolute
-                    margin-left: offset(6)
+                .text
+                    display: flex
+                    width: 100% !important
+                    > * 
+                        flex: 1
