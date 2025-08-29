@@ -5,11 +5,28 @@ params:
     position: hero
   search:
     active: false
+  i18n:
+    positions:
+      - footer
   projects:
     index:
       options:
         categories: false
+    single:
+      taxonomies:
+        position: hero
+        show_name: true
+    share_links:
+      enabled: false
   image_sizes:
     design_system:
       lightbox:
         disabled: true
+    blocks:
+      gallery:
+        grid:
+          desktop:  860
+    sections:
+      projects:
+        hero_single:
+          desktop:  1729

@@ -18,13 +18,16 @@ h4, .h4
 // .document-content
 //     z-index: 10
 
+.breadcrumb-nav
+    @extend .sr-only
+
 header#document-header
     nav.primary-menu
         @include media-breakpoint-down(md)
             .header-button
                 display: none
         .menu
-            a
+            a[target="_blank"]
                 @extend .btn
             @include media-breakpoint-down(md)
                 display: block
@@ -32,55 +35,100 @@ header#document-header
                 position: absolute
                 right: var(--grid-gutter)
                 top: 0
+    .header-cover
+        height: 100vh
+        left: 0
+        pointer-events: none
+        position: absolute
+        opacity: 0
+        top: 0
+        width: 100vw
+        img
+            height: 100%
+            object-fit: cover
+            width: 100%
+    .logo:hover ~ .header-cover
+        opacity: 1
 
 footer#document-footer
-    padding: space(6) space(1)
-    > .container:first-child
-        display: none
-    .nav-legal
-        display: none
-    .container + .container
-        display: flex
-        align-items: end
-        gap: space(12)
-        margin-top: 0
-        > * + *
-            margin-top: 0
-        a, span, small
-            @include body-text
-            line-height: 1
-            display: inline-block
-        a
-            text-decoration: underline
-            text-underline-offset: space(1)
-            &::after
+    border-top: 1px solid var(--color-text)
+    padding-bottom: space(8)
+    padding-top: space(4)
+    a
+        text-decoration: underline
+    .container:first-child
+        padding-bottom: 0
+        .footer-menu
+            @include h1
+            a
+                text-decoration: none
+            .footer-i18n
                 display: none
-    .footer-social
-        order: 0
-    .nav-social
-        display: flex
-        align-items: end
-        gap: space(12)
+            + *
+                margin-top: space(10)
+        .footer-social
+            text-align: left
+            li a::after
+                content: ''
+        .footer-cta li:first-of-type
+            @extend .btn
+            --btn-color: var(--color-background)
+            --btn-background: var(--color-text)
+            --btn-border: none
+            --btn-hover-color: var(--color-text)
+            --btn-hover-background: #{alphaColor($color-accent, 0.85)}
+            --btn-hover-border: var(--btn-border)
+            text-decoration: none
+            text-align: center
+            width: 100%
+            a
+                @include h1
+                color: inherit
+                text-decoration: none
+                &::after
+                    content: ''
+        @include media-breakpoint-down(md)
+            display: flex
+            flex-direction: column
+            .footer-cta 
+                margin-top: 0
+                order: -1
+                margin-bottom: space(8)
+                li:first-of-type
+                    padding: space(10)
+            .footer-menu
+                @include h2
+                li + li
+                    margin-top: 0
+            .footer-social
+                @include body-text
+        @include media-breakpoint-up(md)
+            .footer-cta li:first-of-type
+                padding: space(18)
+                width: columns(6)
+    .container:nth-child(2)
+        .nav-legal,
+        .footer-credit,
+        .footer-i18n span
+            @include body-text
+        .footer-legals .footer-i18n
+            display: none
+        @include media-breakpoint-down(md)
+            > * + *
+                margin-top: space(2)
+            .footer-credit,
+            .footer-i18n
+                margin-top: space(2)
+        @include media-breakpoint-up(md)
+            > div
+                display: flex
+                align-items: baseline
+                gap: space(4)
+            .footer-legals
+                width: columns(6)
     @include media-breakpoint-up(md)
-        text-align: right
-        .container + .container
-            align-items: baseline
-            justify-content: end
-    @include media-breakpoint-down(md)
-        padding-bottom: space(3)
-        .nav-social
-            flex-direction: column-reverse
-            align-items: start
-            gap: space(2)
-        .container + .container
-            justify-content: space-between
-    @include media-breakpoint-up(desktop)
-        left: auto
-        position: fixed
-        bottom: 0
-        right: 0
-        .container
-            width: auto
+        padding-top: space(2)
+        padding-bottom: space(29)
 
 .taxonomies-list
     .dropdown

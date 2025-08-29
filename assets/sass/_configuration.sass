@@ -5,6 +5,10 @@ $color-border: rgba(0, 0, 0, 0.30)
 $color-background-alt: #222222
 $color-background: #000000
 $color-action-background: #3F3F3F
+// specifics
+$color-background-informations: #B1AEA8
+$color-informations: #4D5356
+$color-hover: #FE5628
 
 // $body-font-family: "Pitch Sans", sans-serif
 $body-font-family: "Untitled Sans", sans-serif
@@ -12,20 +16,26 @@ $heading-font-family: "Untitled Sans", sans-serif
 
 
 // Link
-$link-underline-offset: space(2)
+$link-underline-offset: space()
 $link-underline-thickness: 1px
 $link-transition: none
 $link-unhover-decoration-color-alpha: 0
 
+// header
 $header-background: transparent
 $header-sticky-background: transparent
-$header-logo-height: pxToRem(16)
+$header-logo-height: pxToRem(21)
 $header-border-bottom-width: 0
 $header-nav-padding-y: space(2)
 $header-nav-padding-y-desktop: space(2)
-$hero-background-color: $color-background
+
+// hero
+$hero-background-color: transparent
+
+// footer
 $footer-background-color: transparent
 $footer-logo-height: pxToRem(26)
+$footer-icons-enabled: false
 
 $grid-gutter-xxl: space(2)
 $grid-gutter-lg: space(2)
@@ -51,6 +61,7 @@ $h2-size-desktop: pxToRem(48)
 $h2-size: pxToRem(36)
 $h2-line-height: pxToRem(50.4)
 $h2-weight: $heading-font-weight
+$h2-letter-spacing: -0.04em
 
 // h3
 $h3-size-desktop: pxToRem(36)
@@ -67,6 +78,14 @@ $h4-weight: $heading-font-weight
 $h5-text-transform: none
 $h6-text-transform: none
 
+// lead
+$lead-hero-size-desktop: $h1-size-desktop
+$lead-hero-line-height-desktop: $h1-line-height
+$lead-hero-letter-spacing: -0.04em
+
+// components
+$images-border-radius: pxToRem(8)
+
 // Buttons
 $btn-font-size-desktop: pxToRem(14)
 $btn-font-size: pxToRem(14)
@@ -77,6 +96,8 @@ $btn-background: $color-action-background
 $btn-hover-background: $color-text
 $btn-hover-color: $color-background
 $btn-min-width-desktop: 0
-
 $btn-border-radius: space(25)
 $btn-border: none
+
+// blocks
+$block-space-y-desktop: pxToRem(160)
