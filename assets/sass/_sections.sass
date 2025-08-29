@@ -204,6 +204,17 @@
     --color-text: #{$color-informations}
     .hero
         @extend %high-hero
+        position: static
+        figure
+            left: 0
+            opacity: 0
+            pointer-events: none
+            position: absolute
+            top: 0
+            width: 100%
+            img
+                height: 100vh
+                width: 100vw
     .blocks
         .block-title
             @include h3
