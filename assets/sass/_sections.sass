@@ -1,14 +1,37 @@
+%high-hero
+    padding: 0
+    height: calc(100vh - #{$spacing-2})
+    .container,
+    .content,
+    .hero-text,
+    hgroup
+        height: 100%
+    .hero-text,
+    hgroup
+        display: flex
+        flex-direction: column
+    hgroup 
+        flex: 1
+        justify-content: space-between
+        p
+            margin-top: 0
+    .content
+        padding-top: space(19)
+        .hero-text
+            margin-top: 0
+            width: auto
+    
 .page__home
     .hero
-        min-height: 0
-        padding: 0
+        @extend %high-hero
         .content
-            padding-top: space(12)
             .hero-text
-                margin-top: 0
-                width: auto
+                hgroup .btn
+                    letter-spacing: 0
                 @include media-breakpoint-up(md)
                     --h1-size: #{$h1-size-desktop}
+        @include media-breakpoint-up(md)
+            margin-bottom: pxToRem(160)
 
     .block-posts--list
         .top
@@ -58,3 +81,163 @@
                     max-width: none
                 .post-content, .post-categories
                     padding-top: space(2)
+
+.projects
+    &__page
+        .hero
+            .content
+                flex-wrap: wrap
+                h1
+                    @include h2
+                    order: -3
+                .project-infos
+                    order: -2
+                    .year
+                        @include h2
+                figure
+                    order: -1
+                    width: 100%
+                    margin-top: $spacing-4
+            .projects-taxonomies
+                > li ul
+                    text-align: left
+                .terms
+                    justify-content: flex-start
+                    gap: var(--grid-gutter)
+                .taxonomy-title
+                    @include body-text
+                .taxonomy-children
+                    flex: 1
+            @include media-breakpoint-up(desktop)
+                h1
+                    width: columns(7)
+                .project-infos
+                    .year
+                        margin-left: auto
+                .hero-text
+                    display: grid
+                    grid-gap: var(--grid-gutter)
+                    position: relative
+                    grid-template-columns: 1fr 1fr
+                    width: 100%
+                    padding-bottom: 0
+                    .projects-taxonomies
+                        margin-top: 0
+                        order: -1
+                        width: columns(4)
+                    .taxonomy-title
+                        width: columns(1)
+                    > p // lead
+                        grid-row: 1 / 3
+                        grid-column: 2
+                    .hero-actions
+                        margin-top: auto
+                        grid-row: 2
+                        .btn
+                            @include button-reset
+                            @include body-text
+                            padding: 0
+                            text-decoration: underline
+
+        .block-siblings-navigation
+            .top
+                align-items: baseline
+                display: flex
+                justify-content: space-between
+                margin-bottom: space(10)
+                > a 
+                    @extend .btn
+                .siblings-navigation__title
+                    @include h3
+            .siblings-navigation
+                > ul 
+                    padding-top: 0
+                    li
+                        display: flex
+                        flex-direction: column
+                        > a 
+                            @include stretched-link
+                            span
+                                @extend .sr-only
+                        picture
+                            order: -1
+                            margin-bottom: space(2)
+                        &:hover > a
+                            color: var(--color-text)
+                            text-decoration: underline
+                .next
+                    text-align: left
+                .project-categories
+                    flex-wrap: wrap
+                    justify-content: flex-start
+                    padding-top: space(2)
+                    column-gap: space(4)
+                    row-gap: space()
+                    li
+                        flex: unset
+                    > a
+                        display: none
+                    a
+                        color: var(--color-text-alt)
+                        white-space: nowrap
+                @include media-breakpoint-down(desktop)
+                    > ul
+                        flex-direction: row
+                        column-gap: var(--grid-gutter)
+                        align-items: flex-start
+                        overflow-x: auto
+                        > li
+                            align-items: flex-start
+                            flex: none
+                            width: columns(9)
+                        a
+                            @include body-text
+                            padding: 0 !important
+                        .next::after,
+                        .previous::before
+                            content: ''
+                    .project-categories
+                        flex-direction: row
+
+.persons__section
+    --color-background: #{$color-background-informations}
+    --color-text: #{$color-informations}
+    .hero
+        @extend %high-hero
+        position: static
+        figure
+            left: 0
+            opacity: 0
+            pointer-events: none
+            position: absolute
+            top: 0
+            width: 100%
+            img
+                height: 100vh
+                width: 100vw
+    .blocks
+        .block-title
+            @include h3
+        .block-gallery--grid
+            @include media-breakpoint-up(desktop)
+                .gallery > *
+                    flex: 1
+        .block:first-child
+            &.block-gallery--grid
+                @include media-breakpoint-up(desktop)
+                    .gallery
+                        align-items: center
+        .block-class-chapter-with-notes-right
+            .rich-text, 
+            .notes
+                p
+                    @include h1
+                    b
+                        @include h3
+                        display: block
+            @include media-breakpoint-up(desktop)
+                .text
+                    display: flex
+                    width: 100% !important
+                    > * 
+                        flex: 1

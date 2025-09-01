@@ -1,0 +1,46 @@
+<div class="container">
+  {{ $footer_primary := partial "GetMenu" "footer" }}
+  {{ $footer_cta := partial "GetMenu" "footer-contact" }}
+  <div class="footer-nav">
+    {{ if $footer_primary }}
+      {{ partial "commons/menu.html" (dict
+          "kind" "footer"
+          "level" 1
+          "context" .
+          "class" "footer-menu"
+      )}}
+    {{ end }}
+    <div class="footer-social">
+      {{ partial "footer/social.html" . }}
+    </div>
+  </div>
+  {{ if $footer_cta }}
+    {{ partial "commons/menu.html" (dict
+        "kind" "footer-contact"
+        "level" 1
+        "context" .
+        "class" "footer-cta"
+    )}}
+  {{ end }}
+  {{ if and site.Params.search.active (in site.Params.search.positions "footer") }}
+    <div class="footer-search">
+      {{ partial "commons/search/button.html" "footer" }}
+    </div>
+  {{ end }}
+</div>
+
+<div class="container">
+  <div>
+    <p>{{ i18n "footer.credit" }}</p>
+    {{ if in site.Params.i18n.positions "footer" }}
+      {{ partial "commons/i18n.html" (dict
+          "context" .
+          "position" "footer"
+        )}}
+    {{ end }}
+  </div>
+  <div class="footer-legals">
+    {{ partial "footer/legals.html" . }}
+  {{ partial "footer/credit.html" . }}
+  </div>
+</div>
