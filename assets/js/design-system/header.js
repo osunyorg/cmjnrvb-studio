@@ -1,4 +1,4 @@
-class FooterImages {
+class Header {
     constructor () {
         this.imagesContainer = document.querySelector('.header-cover');
         if (!this.imagesContainer) {
@@ -27,4 +27,4 @@ class FooterImages {
     }
 }
 
-export default new FooterImages();
+export default new Header();
