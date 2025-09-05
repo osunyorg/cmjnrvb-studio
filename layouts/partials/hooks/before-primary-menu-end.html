@@ -1,1 +1,19 @@
-<div class="header-cover"></div>
+{{ $home := site.GetPage "/" }}
+
+{{/*  images for logo hover effect  */}}
+{{ with $home }}
+  {{ range .Params.contents }}
+    {{ if and (eq .template "gallery") (eq .html_class "block-class-hover-covers") }}
+      {{ with .data }}
+        <div class="header-cover">
+          {{ range .images }}
+            {{ partial "commons/image.html" (dict
+                "image" .id
+                "sizes" site.Params.image_sizes.sections.home.hero
+            ) }}
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}

@@ -43,10 +43,11 @@ header#document-header
         opacity: 0
         top: 0
         width: 100vw
-        img
+        img, picture
             height: 100%
-            object-fit: cover
             width: 100%
+        img
+            object-fit: cover
     .logo:hover ~ .header-cover
         opacity: 1
 
@@ -135,3 +136,7 @@ footer#document-footer
         button
             @extend .button
             margin: auto
+
+.page__home
+    .block-class-hover-covers
+        display: none
