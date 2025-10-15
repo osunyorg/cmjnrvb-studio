@@ -30,3 +30,5 @@ params:
       projects:
         hero_single:
           desktop:  1729
+        grid:
+          desktop:  1904
