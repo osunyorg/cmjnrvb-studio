@@ -24,5 +24,15 @@ items:
   target: mailto:bonjour@cmjnrvb.net
   kind: url
   new_tab: true
-  children: []
+  children:
+  - title: Instagram
+    target: https://instagram.com/cmjn_rvb
+    kind: url
+    new_tab: true
+    children: []
+  - title: LinkedIn
+    target: https://www.linkedin.com/in/takumi/
+    kind: url
+    new_tab: true
+    children: []
 
