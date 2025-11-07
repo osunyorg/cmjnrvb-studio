@@ -12,27 +12,24 @@ h4, .h4
     &[target="_blank"]:not(.icon)
         &:after
             display: none
-
-// .document-content
-//     z-index: 10
+.button--alt
+    --btn-background: #{$color-dark-grey}
+    --btn-color: #{$color-text}
+    --btn-border: none
+    --btn-hover-border: var(--btn-border)
 
 .breadcrumb-nav
     @extend .sr-only
 
 header#document-header
     nav.primary-menu
-        @include media-breakpoint-down(md)
-            .header-button
-                display: none
         .menu
-            a[target="_blank"]
+            li.has-children > a[target="_blank"]
                 @extend .btn
-            @include media-breakpoint-down(md)
-                display: block
-                margin-top: $header-nav-padding-y
-                position: absolute
-                right: var(--grid-gutter)
-                top: 0
+        .header-button
+            @extend .button--large
+            @extend .button--alt
+    
     .header-cover
         // @include container
         height: 100vh
@@ -53,8 +50,91 @@ header#document-header
             // object-position: top left
     .logo:hover ~ .header-cover
         opacity: 1
+    
+    @include media-breakpoint-down(md)
+        transform: none !important
+
+        .header-button
+            background: rgba(255, 255, 255, 0.2) !important
+            backdrop-filter: blur(8px)
+            html:not(.has-menu-opened) &
+                color: var(--color-text) !important
+            .has-menu-opened &
+                --color-text: #{$color-informations}
+            span:first-of-type
+                display: flex
+                align-items: center
+                &::before
+                    content: ''
+                    height: $spacing-1
+                    width: $spacing-1
+                    margin-right: space()
+                    background-color: var(--color-text)
+                    border-radius: 50%
+            span:last-of-type::before
+                content: none !important
+        
+        .primary-menu
+            .header-button
+                position: fixed
+                bottom: $spacing-3
+                left: 50%
+                transform: translateX(-50%)
+                z-index: $zindex-modal
+            
+        .menu
+            --btn-background: var(--color-text)
+            --color-text: #{$color-informations}
+            background: $color-background-informations
+            bottom: 0
+            color: var(--color-text)
+            display: flex
+            height: 50svh
+            left: 0
+            position: fixed
+            transform: translateY(100%)
+            transition: transform 0.3s ease
+            width: 100vw
+            &.is-opened
+                transform: translateY(0%)
+
+            .nav-level-1
+                padding: var(--grid-gutter)
+                width: 100%
+                > li
+                    border: none !important
+                    a
+                        padding: 0
+                    a + a
+                        margin-top: $spacing-1
+                    &:not(.has-children) a
+                        @include h2
+                .has-children
+                    align-items: flex-start
+                    display: flex
+                    justify-content: space-between
+                    gap: var(--grid-gutter)
+                    margin-top: $spacing-3
+                    > a
+                        min-width: unset
+                        padding: pxToRem(12.5) pxToRem(25.5) !important
+                .dropdown-menu
+                    display: block
+                    a
+                        padding: 0
+                        text-decoration: underline
+                        &::after
+                            content: none
+    
+    @include media-breakpoint-up(md)
+        nav.primary-menu
+            .header-button
+                display: none !important
 
 .hero
+    .content
+        .hero-actions a
+            min-width: unset
     figure
         img
             border-radius: $images-border-radius
