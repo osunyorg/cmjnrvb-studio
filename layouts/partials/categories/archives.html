@@ -1,0 +1,9 @@
+{{ partial "categories/archives/header.html" . }}
+
+<ul class="projects-archives-list">
+  {{ range .Pages }}
+    {{ partial "categories/archives/archive.html" . }}
+  {{ end }}
+</ul>
+
+  {{/*  {{ partial "commons/pagination.html" . }}  */}}

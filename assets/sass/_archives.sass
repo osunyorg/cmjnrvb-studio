@@ -1,0 +1,75 @@
+.page-projects__archives
+    --color-background: #{$color-background-informations}
+    --color-text: #{$color-informations}
+    --btn-background: #{$color-informations}
+
+    .projects-archives-header
+        margin-bottom: space(4)
+        
+    .projects-archives-list
+        &, ul
+            @include list-reset
+    
+        .project
+            align-items: center
+            justify-content: center
+            border-bottom: 1px solid var(--color-border)
+            padding:  space(4) var(--grid-gutter)
+            position: relative
+            &:first-child
+                border-top: 1px solid var(--color-border)
+            &-title
+                @include body-text
+            &-taxonomy ul
+                display: flex
+                flex-wrap: wrap
+                gap: space()
+                li:not(:last-of-type)::after
+                    content: ','
+            &-year time
+                color: var(--color-text)
+            .media
+                opacity: 0
+                pointer-events: none
+                position: absolute
+                width: columns(3.5)
+        &:hover .media
+            opacity: 1
+
+    .block-call_to_action
+        margin-top: space(4)
+        margin-bottom: space(4)
+        .call_to_action.call_to_action--without-image 
+            .top
+                grid-column: 1 / 12 !important
+            .description 
+                max-width: unset
+                p
+                    @include h2
+                    &:last-of-type
+                        a:last-of-type
+                            @extend .btn
+                            letter-spacing: 0
+        
+    @include media-breakpoint-up(md)
+        .project-year,
+        .header-year
+            text-align: right
+        
+        .projects-archives-header
+            display: flex
+            gap: var(--grid-gutter)
+            > *:not(:nth-child(3))
+                width: columns(2)
+            > *:nth-child(3)
+                width: columns(4)
+            .header-taxonomy__services
+                width: columns(4)
+        
+        .project
+            .project-content 
+                gap: var(--grid-gutter)
+                > *:not(.project-taxonomy__services)
+                    width: columns(2)
+                .project-taxonomy__services
+                    width: columns(4)

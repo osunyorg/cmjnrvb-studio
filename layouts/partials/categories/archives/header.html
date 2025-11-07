@@ -1,0 +1,13 @@
+{{ $selected_taxonomies := slice (i18n "archives.header.sector") (i18n "archives.header.services") (i18n "archives.header.type") }}
+
+<div class="container">
+  <div class="projects-archives-header">
+    <span class="header-title">{{ i18n "archives.header.project" }}</span>
+    {{ range $selected_taxonomies }}
+      <span class="header-taxonomy">
+        {{- . -}}
+      </span>
+    {{ end }}
+    <span class="header-year">{{ i18n "archives.header.year" }}</span>
+  </div>
+</div>

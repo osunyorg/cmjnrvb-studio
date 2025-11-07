@@ -1,0 +1,11 @@
+{{ if .categories }}
+  <ul>
+    {{ range .categories }}
+      <li {{- with .Params.bodyclass }} class="{{ . }}" {{- end }}>
+        <a href="{{ .Permalink }}">
+          {{- safeHTML .name -}}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

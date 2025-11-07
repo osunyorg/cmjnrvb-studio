@@ -1,3 +1,10 @@
+archives:
+  header:
+    project: Projet
+    sector: Secteur
+    services: Services
+    type: Type
+    year: Année
 commons:
   credit: Construit avec <a href="https://www.osuny.org/" title="Osuny - lien externe" target="_blank" rel="noreferrer">Osuny</a>
 footer:

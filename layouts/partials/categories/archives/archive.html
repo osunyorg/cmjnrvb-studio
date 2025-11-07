@@ -1,0 +1,45 @@
+
+<li>
+  <article class="container project {{ .Params.bodyclass }}" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="project-content">
+      <h2 class="project-title">
+        {{ .Params.title }}
+        {{ with .Params.subtitle }}
+          <span class="project-subtitle">
+            {{ . }}
+          </span>
+        {{ end }}
+      </h2>
+      <div class="project-taxonomy project-taxonomy__sector">
+        {{ range .Params.taxonomies }}
+          {{ if eq .name (i18n "archives.header.sector") }}
+            {{ partial "categories/archives/categories.html" . }}
+          {{ end }}
+        {{ end }}
+      </div>
+      <div class="project-taxonomy project-taxonomy__services">
+        {{ range .Params.taxonomies }}
+          {{ if eq .name (i18n "archives.header.services") }}
+            {{ partial "categories/archives/categories.html" . }}
+          {{ end }}
+        {{ end }}
+      </div>
+      <div class="project-taxonomy project-taxonomy__type">
+        {{ range .Params.taxonomies }}
+          {{ if eq .name (i18n "archives.header.type") }}
+            {{ partial "categories/archives/categories.html" . }}
+          {{ end }}
+        {{ end }}
+      </div>
+      <div class="project-year">
+        {{ partial "projects/partials/project/year.html" .Params.year }}
+      </div>
+    </div>
+
+    {{ partial "projects/partials/project/media.html" (dict 
+        "image" .Params.image 
+        "layout" "grid"
+        "type" "project"
+      ) }}
+  </article>
+</li>
