@@ -23,9 +23,14 @@ params:
       lightbox:
         disabled: true
     blocks:
+      image:
+        desktop:  1964
+
       gallery:
         grid:
-          desktop:  860
+          desktop:  978
+        large:
+          desktop:  1964
     sections:
       projects:
         hero_single:

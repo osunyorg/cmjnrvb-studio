@@ -45,7 +45,6 @@
                   {{ if and $in_project .Params.image }}
                     {{- partial "commons/image.html" (dict
                         "image"    .Params.image
-                        "sizes"    site.Params.image_sizes.blocks.projects.grid
                       ) -}}
                   {{ end }}
                 </a>
@@ -68,7 +67,6 @@
                   {{ if and $in_project .Params.image }}
                     {{- partial "commons/image.html" (dict
                         "image"    .Params.image
-                        "sizes"    site.Params.image_sizes.blocks.projects.grid
                       ) -}}
                   {{ end }}
                 </a>
