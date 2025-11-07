@@ -201,11 +201,14 @@
         .block-class-chapter-with-notes-right
             .rich-text, 
             .notes
+                margin-top: 0
                 p
                     @include h1
                     b
                         @include h3
                         display: block
+                br:first-of-type
+                    display: none
             @include media-breakpoint-up(desktop)
                 .text
                     display: flex
