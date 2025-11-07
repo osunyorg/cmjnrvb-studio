@@ -82,6 +82,21 @@
                 .post-content, .post-categories
                     padding-top: space(2)
 
+    .block-call_to_action--no_background
+        margin-bottom: calc(var(--block-space-y) / 2)
+        .actions
+            display: flex
+            align-items: baseline
+            justify-content: center
+            a:first-child
+                @extend .button--large
+                @extend .button--alt
+                --btn-background: #{$color-dark-grey}
+                --btn-color: #{$color-text}
+                --btn-border: none
+                --btn-hover-border: var(--btn-border)
+                
+
 .projects
     &__page
         .hero
