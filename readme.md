@@ -2,9 +2,17 @@
 
 ## Contribution
 
-L'image de partage d'un projet est utilisée en couverture (sur la page du projet). Dimensions : 3928x1790 
+### Image de couverture du projet
 
-L'image principale du projet est utilisée dans la grille ou les listes de projets. Dimensiosn : 3928px de large, et hauteur libre
+Dimensions : 3928x1790 
+
+Par défaut, c'est l'image principale, sinon mettre la class `cover` sur le bloc image du projet (le bloc sera retiré du contenu de la page).
+
+### Image de la grille
+
+Dimensions : 3928px de large, et hauteur libre
+
+L'image principale du projet est utilisée dans la grille ou les listes de projets. 
 
 # Osuny
 

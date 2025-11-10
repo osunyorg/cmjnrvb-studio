@@ -5,7 +5,18 @@
   {{- $title = printf "%s <span>%s</span>" $title . -}}
 {{ end }}
 
-{{ $image := .Params.shared_image | default .Params.image }}
+{{ $image := .Params.image }}
+
+{{ with .Params.contents }}
+  {{ $cover_blocks := where . "html_class" "block-class-cover" }}
+  {{ with $cover_blocks }}
+    {{ range . }}
+      {{ with .data.image }}
+        {{ $image = . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
 {{- partial "header/hero.html" (dict
   "title" $title

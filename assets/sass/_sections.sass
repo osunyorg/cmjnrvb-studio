@@ -129,9 +129,12 @@
         @include grid(3, xxl, pxToRem(80))
 
 .block-projects--grid,
-.projects--grid
+.projects--grid,
+.projects
     row-gap: pxToRem(80)
-    .project
+
+.project
+    .project-content
         .project-title,
         .project-subtitle
             @include h4
