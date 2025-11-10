@@ -12,6 +12,7 @@ params:
     index:
       options:
         categories: false
+        summary: false
     single:
       taxonomies:
         position: hero
