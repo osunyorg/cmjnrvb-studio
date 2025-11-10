@@ -13,8 +13,8 @@ items:
   kind: url
   new_tab: false
   children: []
-  path: "/pages/archives"
-  file: content/fr/pages/archives/_index.html
+  path:
+  file:
 - title: Information
   target: "/fr/information/"
   kind: page
