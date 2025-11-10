@@ -1,0 +1,22 @@
+{{ $options := site.Params.projects.index.options }}
+{{ $layout := site.Params.projects.index.layout }}
+{{ $layout_partial := printf "projects/partials/layouts/%s/%s.html" $layout $layout }}
+
+{{/*  Remove paginator  */}}
+{{ $projects := .Pages }}
+
+{{/*  Excluse archives from index  */}}
+{{ if eq .Kind "section" }}
+  {{ $archives := where $projects "Params.projects_categories" "intersect" (slice "archives")  }}
+  {{ $projects = $projects | complement $archives }}
+{{ end }}
+
+{{ $projects = partial "GetPathSliceFromObjects" $projects }}
+
+<div class="projects">
+  {{ partial $layout_partial (dict
+      "projects" $projects
+      "heading_level" 2
+      "options" $options
+    ) }}
+</div>
