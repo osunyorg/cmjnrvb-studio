@@ -9,12 +9,10 @@ items:
   path: "/projects"
   file: content/fr/projects/_index.html
 - title: Archives
-  target: "/projets/archives/"
+  target: "/fr/projets/archives/"
   kind: url
   new_tab: false
   children: []
-  path:
-  file:
 - title: Information
   target: "/fr/information/"
   kind: page
