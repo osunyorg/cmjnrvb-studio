@@ -2,14 +2,16 @@
 <li>
   <article class="container project {{ .Params.bodyclass }}" itemscope itemtype="https://schema.org/CreativeWork">
     <div class="project-content">
-      <h2 class="project-title">
-        {{ .Params.title }}
-        {{ with .Params.subtitle }}
-          <span class="project-subtitle">
-            {{ . }}
-          </span>
-        {{ end }}
-      </h2>
+      <a href="{{ .Permalink }}">
+        <h2 class="project-title">
+          {{ .Params.title }}
+          {{ with .Params.subtitle }}
+            <span class="project-subtitle">
+              {{ . }}
+            </span>
+          {{ end }}
+        </h2>
+      </a>
       <div class="project-taxonomy project-taxonomy__sector">
         {{ range .Params.taxonomies }}
           {{ if eq .name (i18n "archives.header.sector") }}
@@ -37,9 +39,9 @@
     </div>
 
     {{ partial "projects/partials/project/media.html" (dict 
-        "image" .Params.image 
-        "layout" "grid"
-        "type" "project"
-      ) }}
+      "image" .Params.image
+      "layout" "grid"
+      "type" "project"
+    ) }}
   </article>
 </li>
