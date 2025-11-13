@@ -9,6 +9,8 @@ params:
     position: hero
   search:
     active: false
+  breadcrumb:
+    position: none
   i18n:
     positions:
       - footer
