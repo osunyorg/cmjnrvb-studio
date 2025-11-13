@@ -64,8 +64,11 @@
                     width: 100%
                     margin-top: $spacing-4
             .projects-taxonomies
+                > li + li
+                    margin-top: space(2)
                 > li ul
                     text-align: left
+                    gap: 0 $spacing-1
                 .terms
                     justify-content: flex-start
                     gap: var(--grid-gutter)
