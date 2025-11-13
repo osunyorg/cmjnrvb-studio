@@ -14,7 +14,7 @@ items:
   new_tab: false
   children: []
 - title: Information
-  target: "/fr/information/"
+  target: "/fr/"
   kind: page
   new_tab: false
   children: []
