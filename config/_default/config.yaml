@@ -1,5 +1,7 @@
 theme: osuny
 _merge: deep
+pagination:
+  pagerSize: 100
 params:
   blocks:
     ignored: "block-class-cover"
