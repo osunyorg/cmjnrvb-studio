@@ -1,7 +1,5 @@
 .page-projects__archives
-    --color-background: #{$color-background-informations}
-    --color-text: #{$color-informations}
-    --btn-background: #{$color-informations}
+    @include light-page
 
     .projects-archives-header
         margin-bottom: space(4)
@@ -69,7 +67,7 @@
                 width: columns(4)
         
         .project
-            .project-content 
+            .project-content
                 gap: var(--grid-gutter)
                 > *:not(.project-taxonomy__services)
                     width: columns(2)
