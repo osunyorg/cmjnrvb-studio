@@ -2,7 +2,7 @@
   <ul>
     {{ range .categories }}
       <li {{- with .Params.bodyclass }} class="{{ . }}" {{- end }}>
-        <a href="{{ .Permalink }}">
+        <a href="{{ .permalink }}">
           {{- safeHTML .name -}}
         </a>
       </li>
