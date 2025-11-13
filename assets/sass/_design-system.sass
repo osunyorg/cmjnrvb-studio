@@ -9,6 +9,7 @@ h4, .h4
 
 .btn, .button
     line-height: 1
+    letter-spacing: -0.02em
     &[target="_blank"]:not(.icon)
         &:after
             display: none
@@ -134,6 +135,24 @@ header#document-header
             .header-button
                 display: none !important
 
+%high-hero
+    padding-bottom: 0
+    height: calc(100vh - #{$spacing-4})
+    .container,
+    .content,
+    .hero-text,
+    hgroup
+        height: 100%
+    .hero-text,
+    hgroup
+        display: flex
+        flex-direction: column
+    hgroup 
+        flex: 1
+        justify-content: space-between
+        p
+            margin-top: 0
+
 .hero
     padding-top: space(19)
     .content
@@ -153,10 +172,14 @@ footer#document-footer
     padding-top: space(4)
     a
         text-decoration: underline
+    ul
+        li + li
+            margin-top: space()
     .container:first-child
         padding-bottom: 0
         .footer-menu
             @include h3
+            letter-spacing: -0.04em
             a
                 text-decoration: none
             .footer-i18n
@@ -165,8 +188,11 @@ footer#document-footer
                 margin-top: space(10)
         .footer-social
             text-align: left
-            li a::after
-                content: ''
+            a, span
+                @include body-text
+            li
+                a::after
+                    content: ''
         .footer-cta li:first-of-type
             @extend .btn
             --btn-color: var(--color-background)
@@ -212,6 +238,10 @@ footer#document-footer
             @include body-text
         .footer-legals .footer-i18n
             display: none
+        .footer-credit
+            a[target="_blank"]
+                &::after
+                    display: none
         @include media-breakpoint-down(md)
             > * + *
                 margin-top: space(2)
@@ -234,3 +264,7 @@ footer#document-footer
         button
             @extend .button
             margin: auto
+
+@mixin inline-btn
+    display: inline-block
+    vertical-align: middle

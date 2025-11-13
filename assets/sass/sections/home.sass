@@ -1,0 +1,31 @@
+.page__home
+    .hero
+        @extend %high-hero
+        .content
+            .hero-text
+                hgroup .btn
+                    @include inline-btn
+                @include media-breakpoint-up(md)
+                    --h1-size: #{$h1-size-desktop}
+        @include media-breakpoint-up(md)
+            margin-bottom: pxToRem(160)
+    .block-projects
+        margin-bottom: space(20)
+        .projects--grid
+            > *:first-child,
+            > *:nth-child(4n)
+                grid-column: 1 / 3
+
+    .block-call_to_action--no_background
+        margin-bottom: var(--block-space-y)
+        margin-top: space(20)
+        .actions
+            display: flex
+            align-items: baseline
+            justify-content: center
+            a:first-child
+                @extend .button--large
+                @extend .button--alt
+                margin: 0
+    .block-class-hover-covers
+        display: none
