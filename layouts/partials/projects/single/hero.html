@@ -70,7 +70,9 @@
         {{ end }}
 
         {{ with $summary }}
-          {{ safeHTML . }}
+          <div class="summary">
+            {{ safeHTML . }}
+          </div>
         {{ end }}
       </div>
 
