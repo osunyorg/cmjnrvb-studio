@@ -6,24 +6,24 @@ class PagesHero {
         this.home = document.querySelector('.page__home');
 
         if ((this.page || this.home) && !isMobile()) {
-            this.listen();
+            this.reorderElements();
         }
     }
     
-    listen () {
+    reorderElements () {
         this.hero = document.querySelector('.hero');
         this.title = this.hero.querySelector('h1');
         this.heading = this.hero.querySelector('hgroup');
 
-        if (this.page) {
-            this.moveHeading();
-        }
+        // if (this.page) {
+            // this.reorderHeading();
+        // }
         if (this.home) {
-            this.moveButton();
+            this.reorderButton();
         }
     }
 
-    moveHeading() {
+    reorderHeading() {
         this.date = this.hero.querySelector('.project-infos');
         this.content = this.hero.querySelector('.content');
 
@@ -35,7 +35,7 @@ class PagesHero {
         }
     }
 
-    moveButton() {
+    reorderButton() {
         this.button = this.hero.querySelector('.hero-actions');
         this.lead = this.heading.querySelector('p:last-of-type');
 

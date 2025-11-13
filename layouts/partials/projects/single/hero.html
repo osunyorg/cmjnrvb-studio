@@ -18,11 +18,62 @@
   {{ end }}
 {{ end }}
 
-{{- partial "header/hero.html" (dict
+{{/*  {{- partial "header/hero.html" (dict
   "title" $title
   "image" $image
   "sizes" site.Params.image_sizes.sections.projects.hero_single
   "hero_text_complement" "projects/single/hero/infos.html"
   "context" .
   "share" $share
-) -}}
+) -}}  */}}
+
+
+{{ $summary := .Params.summary | safeHTML }}
+{{ $button := .Params.header_cta }}
+{{ $title_attribute := "" | safeHTMLAttr }}
+{{ $subtitle_is_summary := true }}
+{{ $summary := .Params.summary }}
+{{ if site.Params.search.active }}
+  {{ $title_attribute = "data-pagefind-weight='10'" | safeHTMLAttr }}
+{{ end }}
+
+<header class="hero {{ if $image }}hero--with-image{{ end }}">
+  <div class="container">
+    <div class="content">
+      <h1 {{ $title_attribute }}>{{ partial "PrepareHTML" $title }}</h1>
+      {{ partial "projects/single/hero/infos.html" . }}
+
+      {{ if $image }}
+        {{ partial "commons/image-figure.html" (dict
+            "image" $image
+            "sizes" site.Params.image_sizes.sections.projects.hero_single
+            "lazy" false
+            "focusable_figcaption" true
+          ) }}
+      {{ end }}
+
+      <div class="hero-text">
+        {{ $taxonomies_position := partial "GetTaxonomiesPosition" . }}
+        {{ if and .Params.taxonomies (eq $taxonomies_position "hero") }}
+          {{ partial "taxonomies/single-list.html" . }}
+        {{ end }}
+
+        {{ if or $button $share }}
+          <div class="hero-actions">
+            {{ with $button }}
+              {{ partial "header/cta.html" . }}
+            {{ end }}
+            {{ if $share }}
+              {{ partial "commons/share/dropdown.html" . }}
+            {{ end }}
+          </div>
+        {{ end }}
+
+        {{ with $summary }}
+          {{ safeHTML . }}
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</header>

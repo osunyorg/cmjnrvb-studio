@@ -12,6 +12,9 @@ h4, .h4
     &[target="_blank"]:not(.icon)
         &:after
             display: none
+    @include firefox
+        --btn-padding: #{pxToRem(4.5)} #{pxToRem(10)} #{space(1.4)}
+
 .button--alt
     --btn-background: #{$color-dark-grey}
     --btn-color: #{$color-text}
@@ -200,6 +203,8 @@ footer#document-footer
             .footer-cta li:first-of-type
                 padding: space(18)
                 width: columns(6)
+                @include firefox
+                    padding-bottom: space(19)
     .container:nth-child(2)
         .nav-legal,
         .footer-credit,
