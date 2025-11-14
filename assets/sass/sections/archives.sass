@@ -5,9 +5,15 @@
         margin-bottom: space(4)
         
     .projects-archives-list
+        &:has(> li:hover)
+            > li
+                opacity: 0.7
+                &:hover
+                    opacity: 1
         &, ul
             @include list-reset
         > li
+            transition: opacity 0.3s
             position: relative
             border-bottom: 1px solid var(--color-border)
             &:first-child
@@ -20,11 +26,11 @@
             &-title
                 @include body-text
             &-taxonomy ul
-                display: flex
-                flex-wrap: wrap
-                gap: space()
-                li:not(:last-of-type)::after
-                    content: ','
+                li
+                    display: inline
+                    &:not(:last-of-type)
+                        a::after
+                            content: ',' 
             &-year time
                 color: var(--color-text)
             .media
