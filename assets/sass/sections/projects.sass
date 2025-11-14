@@ -1,11 +1,77 @@
+.project
+    .project-content
+        .project-title,
+        .project-subtitle
+            @include h4
+        .project-subtitle
+            color: var(--color-accent)
+            margin-bottom: $spacing-1
+            margin-top: $spacing-1
+        .project-categories
+            @include h4
+            margin-bottom: $spacing-1
+            margin-top: $spacing-1
+            gap: space()
+            li + li
+                a::before
+                    content: '+'
+                    display: inline-block
+                    margin-right: space()
+        .project-description > *:last-child
+            margin-bottom: 0
+    .media
+        border-radius: $images-border-radius
+        margin-bottom: $spacing-1
+
+.block-projects--grid,
+.projects--grid,
+.projects
+    row-gap: pxToRem(80)
+
+.projects__section
+    .taxonomies-list--dropdown
+        margin-bottom: space(8)
+        .dropdown
+            button
+                @extend .btn
+                padding: pxToRem(10) $spacing-2
+                background: $color-dark-grey
+                &:not([aria-expanded="true"]):hover
+                    background: var(--color-accent)
+                    color: var(--color-text)
+        @include media-breakpoint-up(desktop)
+            gap: space(2)
+    .projects--grid
+        @include grid(3, xxl, pxToRem(80))
+    .document-content
+        display: flex
+        flex-direction: column
+        .blocks
+            order: 2
+    .block-chapter
+        --block-space-y: #{space(20)}
+        border-top: 1px solid white
+        padding-top: space(2)
+        .text
+            width: auto !important
+        .rich-text
+            p
+                @include lead-hero
+                a
+                    @extend .button
+                    @include inline-btn
 
 .projects__page
     .hero
         .content
             flex-wrap: wrap
-            h1
-                @include h2
+            .hero-title
                 order: -3
+                h1, p
+                    @include h2
+                p
+                    color: var(--color-accent)
+                    margin-top: 0
             .project-infos
                 order: -2
                 .year
@@ -17,9 +83,13 @@
         .projects-taxonomies
             > li + li
                 margin-top: space(2)
+                &::after
             > li ul
                 text-align: left
                 gap: 0 $spacing-1
+                li:not(:last-child)
+                    a::after
+                        content: ', '
             .terms
                 justify-content: flex-start
                 gap: var(--grid-gutter)
@@ -28,9 +98,15 @@
             .taxonomy-children
                 flex: 1
         @include media-breakpoint-up(desktop)
+            .content
+                position: relative
             h1
-                width: columns(7)
+                max-width: columns(9)
             .project-infos
+                width: columns(3)
+                position: absolute
+                right: 0
+                top: 0
                 .year
                     margin-left: auto
             .hero-text
@@ -64,64 +140,6 @@
                         text-decoration: underline
                         &:hover
                             color: var(--color-text)
-
-.projects__section
-    .taxonomies-list--dropdown
-        margin-bottom: space(8)
-        .dropdown
-            button
-                @extend .btn
-                padding: pxToRem(10) $spacing-2
-                background: $color-dark-grey
-                &:not([aria-expanded="true"]):hover
-                    background: var(--color-accent)
-                    color: var(--color-text)
-    .projects--grid
-        @include grid(3, xxl, pxToRem(80))
-    .document-content
-        display: flex
-        flex-direction: column
-        .blocks
-            order: 2
-    .block-chapter
-        --block-space-y: #{space(20)}
-        border-top: 1px solid white
-        padding-top: space(2)
-        .text
-            width: auto !important
-        .rich-text
-            p
-                @include lead-hero
-                a
-                    @extend .button
-                    @include inline-btn
-
-.project
-    .project-content
-        .project-title,
-        .project-subtitle
-            @include h4
-        .project-subtitle
-            color: var(--color-accent)
-            margin-bottom: $spacing-1
-            margin-top: $spacing-1
-        .project-categories
-            @include h4
-            margin-bottom: $spacing-1
-            margin-top: $spacing-1
-            gap: space()
-            li + li
-                a::before
-                    content: '+'
-                    display: inline-block
-                    margin-right: space()
-        .project-description > *:last-child
-            margin-bottom: 0
-    .media
-        border-radius: $images-border-radius
-        margin-bottom: $spacing-1
-
-.block-projects--grid,
-.projects--grid,
-.projects
-    row-gap: pxToRem(80)
+    @include media-breakpoint-up(desktop)
+        .lightbox-button
+            pointer-events: none
