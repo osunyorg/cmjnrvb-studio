@@ -3,7 +3,7 @@
 
     .projects-archives-header
         margin-bottom: space(4)
-        
+
     .projects-archives-list
         &:has(> li:hover)
             > li
@@ -16,8 +16,6 @@
             transition: opacity 0.3s
             position: relative
             border-bottom: 1px solid var(--color-border)
-            &:first-child
-                border-top: 1px solid var(--color-border)
         .project
             align-items: center
             justify-content: center
@@ -45,7 +43,7 @@
     .block-call_to_action
         margin-top: space(4)
         margin-bottom: space(4)
-        .call_to_action.call_to_action--without-image 
+        .call_to_action.call_to_action--without-image
             .top
                 grid-column: 1 / 12 !important
             .description 
@@ -56,12 +54,28 @@
                         a:last-of-type
                             @extend .btn
                             letter-spacing: 0
-        
+
+    @include media-breakpoint-down(md)
+        .projects-archives-header
+            display: none
+        .projects-archives-list
+            .project-content
+                gap: 0
+                flex-wrap: wrap
+                > *
+                    width: 50%
+                    &:first-child
+                        text-align: left
+                        padding-right: space(2)
+                    &:nth-child(1n+3)
+                        margin-top: space()
+                        margin-left: 50%
+
     @include media-breakpoint-up(md)
         .project-year,
         .header-year
             text-align: right
-        
+
         .projects-archives-header
             display: flex
             gap: var(--grid-gutter)
@@ -71,7 +85,12 @@
                 width: columns(4)
             .header-taxonomy__services
                 width: columns(4)
-        
+
+        .projects-archives-list
+            > li
+                &:first-child
+                    border-top: 1px solid var(--color-border)
+
         .project
             .project-content
                 gap: var(--grid-gutter)
