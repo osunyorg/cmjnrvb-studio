@@ -50,18 +50,9 @@
         flex-direction: column
         .blocks
             order: 2
-    .block-chapter
-        --block-space-y: #{space(20)}
+    .block-chapter.block-chapter--alt_background
         border-top: 1px solid white
-        padding-top: space(2)
-        .text
-            width: auto !important
-        .rich-text
-            p
-                @include lead-hero
-                a
-                    @extend .button
-                    @include inline-btn
+        margin-top: var(--block-space-y) !important
 
 .projects__page
     .hero
