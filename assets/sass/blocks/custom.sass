@@ -1,0 +1,36 @@
+.block-gallery,
+.block-image,
+.block-siblings-navigation
+    img
+        border-radius: $images-border-radius
+
+.block-class-top-align-left
+    &.block-features
+        li p
+            @include h3
+    @include in-page-without-sidebar
+        .block-content,
+        .text,
+        .call_to_action .top
+            display: flex !important
+            align-items: baseline
+            gap: var(--grid-gutter)
+            > *
+                flex: 1
+        .chapter .text
+            width: 100%
+        &.block-features
+            ul
+                @include grid(2)
+                row-gap: space(10)
+                li:nth-child(even)
+                    margin-top: auto
+        &.block-call_to_action
+            .call_to_action
+                > div
+                    display: block !important
+                .block-title
+                    @include h3
+            .actions
+                margin-left: offset(6)
+                margin-top: $spacing-3 !important

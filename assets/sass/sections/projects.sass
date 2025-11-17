@@ -64,12 +64,13 @@
         .projects-taxonomies
             > li + li
                 margin-top: space(2)
-                &::after
             > li ul
                 text-align: left
-                gap: 0 $spacing-1
+                display: block
+                li, a
+                    display: inline
                 li:not(:last-child)
-                    a::after
+                    &::after
                         content: ', '
             .terms
                 justify-content: flex-start
@@ -126,6 +127,20 @@
                         text-decoration: underline
                         &:hover
                             color: var(--color-text)
+
+    .block-gallery,
+    .block-image
+        --block-space-y: #{var(--grid-gutter)}
+
+    .block-projects
+        .projects--grid
+            @include grid(2, xxl, pxToRem(80))
+
+    &.full-width
+        .block-gallery
+            .gallery
+                @include grid(2)
+
     @include media-breakpoint-up(desktop)
         .lightbox-button
             pointer-events: none

@@ -1,0 +1,93 @@
+
+footer#document-footer
+    border-top: 1px solid var(--color-text)
+    padding-bottom: space(8)
+    padding-top: space(4)
+    a
+        text-decoration: underline
+    ul
+        li + li
+            margin-top: space()
+    .container:first-child
+        padding-bottom: 0
+        .footer-menu
+            @include h3
+            letter-spacing: -0.04em
+            a:not(:hover)
+                text-decoration: none
+            .footer-i18n
+                display: none
+            + *
+                margin-top: space(10)
+        .footer-social
+            text-align: left
+            a, span
+                @include body-text
+            li
+                a::after
+                    content: ''
+        .footer-cta li:first-of-type
+            @extend .btn
+            --btn-color: var(--color-background)
+            --btn-background: var(--color-text)
+            --btn-border: none
+            --btn-hover-color: var(--color-text)
+            --btn-hover-background: #{alphaColor($color-accent, 0.85)}
+            --btn-hover-border: var(--btn-border)
+            text-decoration: none
+            text-align: center
+            width: 100%
+            a
+                @include h1
+                color: inherit
+                text-decoration: none
+                &::after
+                    content: ''
+        @include media-breakpoint-down(md)
+            display: flex
+            flex-direction: column
+            .footer-cta 
+                margin-top: 0
+                order: -1
+                margin-bottom: space(8)
+                li:first-of-type
+                    padding: space(10)
+            .footer-menu
+                @include h2
+                li + li
+                    margin-top: 0
+            .footer-social
+                @include body-text
+        @include media-breakpoint-up(md)
+            .footer-cta li:first-of-type
+                padding: space(18)
+                width: columns(6)
+                @include firefox
+                    padding-bottom: space(19)
+    .container:nth-child(2)
+        .nav-legal,
+        .footer-credit,
+        .footer-i18n span
+            @include body-text
+        .footer-legals .footer-i18n
+            display: none
+        .footer-credit
+            a[target="_blank"]
+                &::after
+                    display: none
+        @include media-breakpoint-down(md)
+            > * + *
+                margin-top: space(2)
+            .footer-credit,
+            .footer-i18n
+                margin-top: space(2)
+        @include media-breakpoint-up(md)
+            > div
+                display: flex
+                align-items: baseline
+                gap: space(4)
+            .footer-legals
+                width: columns(6)
+    @include media-breakpoint-up(md)
+        padding-top: $spacing-1
+        padding-bottom: $spacing-1

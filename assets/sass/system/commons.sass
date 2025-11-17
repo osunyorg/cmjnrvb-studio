@@ -1,0 +1,26 @@
+body
+    letter-spacing: -0.01em
+
+h1, .h1, h2, .h2, h3, .h3
+    letter-spacing: -0.04em
+
+h4, .h4
+    letter-spacing: -0.02em
+
+.btn, .button
+    line-height: 1
+    letter-spacing: -0.02em
+    &[target="_blank"]:not(.icon)
+        &:after
+            display: none
+    @include firefox
+        --btn-padding: #{pxToRem(4.5)} #{pxToRem(10)} #{space(1.4)}
+
+.button--alt
+    --btn-background: #{$color-dark-grey}
+    --btn-color: #{$color-text}
+    --btn-border: none
+    --btn-hover-border: var(--btn-border)
+
+.breadcrumb-nav
+    @extend .sr-only

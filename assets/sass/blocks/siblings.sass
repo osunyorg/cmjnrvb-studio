@@ -1,0 +1,62 @@
+.block-siblings-navigation
+    .top
+        align-items: baseline
+        display: flex
+        justify-content: space-between
+        margin-bottom: space(10)
+        > a 
+            @extend .btn
+        .siblings-navigation__title
+            @include h3
+    .siblings-navigation
+        > ul 
+            padding-top: 0
+            > li
+                display: flex
+                flex-direction: column
+                > a 
+                    @include stretched-link
+                    span
+                        @extend .sr-only
+                picture
+                    order: -1
+                    margin-bottom: space(2)
+                &:hover > a
+                    color: var(--color-text)
+                    text-decoration: underline
+        .next
+            text-align: left
+        .project-categories
+            flex-wrap: wrap
+            justify-content: flex-start
+            padding-top: space(2)
+            row-gap: space()
+            > a
+                display: none
+            a
+                color: var(--color-text-alt)
+                white-space: nowrap
+            li
+                flex: unset
+                > a 
+                    position: relative
+                    z-index: 3
+        
+        @include media-breakpoint-down(desktop)
+            > ul
+                flex-direction: row
+                column-gap: var(--grid-gutter)
+                align-items: flex-start
+                overflow-x: auto
+                > li
+                    align-items: flex-start
+                    flex: none
+                    width: columns(9)
+                a
+                    @include body-text
+                    padding: 0 !important
+                .next::after,
+                .previous::before
+                    content: ''
+            .project-categories
+                flex-direction: row
