@@ -2,17 +2,19 @@
 title: Main menu
 items:
 - title: Projets
+  target: "/fr/selection/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/selection"
+  file: content/fr/pages/selection/_index.html
+- title: Index
   target: "/fr/projets/"
   kind: page
   new_tab: false
   children: []
   path: "/projects"
   file: content/fr/projects/_index.html
-- title: Archives
-  target: "/fr/projets/archives/"
-  kind: url
-  new_tab: false
-  children: []
 - title: Information
   target: "/fr/information/"
   kind: page
