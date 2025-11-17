@@ -30,7 +30,11 @@
 .projects
     row-gap: pxToRem(80)
 
-.projects__section
+
+.projects--grid
+    @include grid(3, xxl, pxToRem(80))
+
+.page-selection
     .taxonomies-list--dropdown
         margin-bottom: space(8)
         .dropdown
@@ -43,8 +47,6 @@
                     color: var(--color-text)
         @include media-breakpoint-up(desktop)
             gap: space(2)
-    .projects--grid
-        @include grid(3, xxl, pxToRem(80))
     .document-content
         display: flex
         flex-direction: column

@@ -12,6 +12,7 @@
     .block-projects
         margin-bottom: space(20)
         .projects--grid
+            @include grid(2, xxl, pxToRem(80))
             > *:first-child,
             > *:nth-child(4n)
                 grid-column: 1 / 3

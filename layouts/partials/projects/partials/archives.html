@@ -1,0 +1,7 @@
+{{ partial "projects/partials/archives/header.html" . }}
+
+<ul class="projects-archives-list">
+  {{ range .Pages }}
+    {{ partial "projects/partials/archives/archive.html" . }}
+  {{ end }}
+</ul>

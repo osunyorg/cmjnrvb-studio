@@ -10,21 +10,21 @@
       <div class="project-taxonomy project-taxonomy__sector">
         {{ range .Params.taxonomies }}
           {{ if eq .name (i18n "archives.header.sector") }}
-            {{ partial "categories/archives/categories.html" . }}
+            {{ partial "projects/partials/archives/categories.html" . }}
           {{ end }}
         {{ end }}
       </div>
       <div class="project-taxonomy project-taxonomy__services">
         {{ range .Params.taxonomies }}
           {{ if eq .name (i18n "archives.header.services") }}
-            {{ partial "categories/archives/categories.html" . }}
+            {{ partial "projects/partials/archives/categories.html" . }}
           {{ end }}
         {{ end }}
       </div>
       <div class="project-taxonomy project-taxonomy__type">
         {{ range .Params.taxonomies }}
           {{ if eq .name (i18n "archives.header.type") }}
-            {{ partial "categories/archives/categories.html" . }}
+            {{ partial "projects/partials/archives/categories.html" . }}
           {{ end }}
         {{ end }}
       </div>
