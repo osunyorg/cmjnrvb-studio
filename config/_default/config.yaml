@@ -36,7 +36,6 @@ params:
     blocks:
       image:
         desktop:  1964
-        
       gallery:
         grid:
           desktop:  978
@@ -45,6 +44,9 @@ params:
     sections:
       projects:
         hero_single:
-          desktop:  1729
-        grid:
-          desktop:  1904
+          desktop:  1964
+        layouts:
+          grid:
+            mobile:  500
+            tablet:  1964
+            desktop:  1964

@@ -29,11 +29,14 @@ header#document-header
     nav.primary-menu
         .menu
             li.has-children > a[target="_blank"]
-                @extend .btn
+                @extend .button
         .header-button
             @extend .button--large
             @extend .button--alt
-    
+        li
+            a:hover
+                text-decoration: underline
+
     .header-cover
         // @include container
         height: 100vh
@@ -162,7 +165,7 @@ footer#document-footer
         .footer-menu
             @include h3
             letter-spacing: -0.04em
-            a
+            a:not(:hover)
                 text-decoration: none
             .footer-i18n
                 display: none
