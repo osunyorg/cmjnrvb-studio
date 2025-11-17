@@ -2,6 +2,13 @@
 title: Footer
 items:
 - title: Projets
+  target: "/fr/selection/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/selection"
+  file: content/fr/pages/selection/_index.html
+- title: Index
   target: "/fr/projets/"
   kind: page
   new_tab: false
