@@ -24,3 +24,11 @@ h4, .h4
 
 .breadcrumb-nav
     @extend .sr-only
+
+a.backtotop
+    @include button
+    @include blur-btn
+    display: none
+    @include media-breakpoint-up(md)
+        .project__page &
+            display: block

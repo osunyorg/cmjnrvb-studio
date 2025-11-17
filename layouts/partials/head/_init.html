@@ -1,7 +1,0 @@
-{{ if or (and (eq .Kind "term") (eq .Type "projects_categories")) (and (eq .Kind "section") (eq .Type "projects")) }}
-  {{ $perPage := 3 }}
-  {{ $collection := .Pages }}
-  {{ $collection = where $collection "Params.contents" "ne" nil }}
-  {{ $paginator := .Paginate $collection $perPage }}
-  {{ .Store.Set "paginator" $paginator }}
-{{ end }}

@@ -34,35 +34,25 @@ header#document-header
     
     @include media-breakpoint-down(md)
         transform: none !important
-
-        .header-button
-            background: rgba(255, 255, 255, 0.2) !important
-            backdrop-filter: blur(8px)
-            html:not(.has-menu-opened) &
-                color: var(--color-text) !important
-            .has-menu-opened &
-                --color-text: #{$color-informations}
-            span:first-of-type
-                display: flex
-                align-items: center
-                &::before
-                    content: ''
-                    height: $spacing-1
-                    width: $spacing-1
-                    margin-right: space()
-                    background-color: var(--color-text)
-                    border-radius: 50%
-            span:last-of-type::before
-                content: none !important
-        
         .primary-menu
             .header-button
-                position: fixed
-                bottom: $spacing-3
-                left: 50%
-                transform: translateX(-50%)
-                z-index: $zindex-modal
-            
+                @include blur-btn
+                html:not(.has-menu-opened) &
+                    color: var(--color-text) !important
+                .has-menu-opened &
+                    --color-text: #{$color-informations}
+                span:first-of-type
+                    display: flex
+                    align-items: center
+                    &::before
+                        content: ''
+                        height: $spacing-1
+                        width: $spacing-1
+                        margin-right: space()
+                        background-color: var(--color-text)
+                        border-radius: 50%
+                span:last-of-type::before
+                    content: none !important
         .menu
             --btn-background: var(--color-text)
             --color-text: #{$color-informations}

@@ -31,3 +31,13 @@
 @mixin inline-btn
     display: inline-block
     vertical-align: middle
+
+@mixin blur-btn
+    background: rgba(255, 255, 255, 0.2) !important
+    backdrop-filter: blur(8px)
+    text-decoration: none
+    position: fixed
+    bottom: $spacing-3
+    left: 50%
+    transform: translateX(-50%)
+    z-index: $zindex-modal
