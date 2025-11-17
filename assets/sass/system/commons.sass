@@ -28,7 +28,21 @@ h4, .h4
 a.backtotop
     @include button
     @include blur-btn
+    @include body-text
     display: none
+    background: rgba(0,0,0,0.1) !important
+    text-decoration: none !important
+    min-width: pxToRem(100)
+    padding-top: pxToRem(10)
+    padding-bottom: pxToRem(10)
+    opacity: 0
+    transform: translateX(-50%) translateY(100px)
+    transition: all $arrow-duration $arrow-ease-transition !important
+    &:hover
+        transform: translateX(-50%) scale(0.95) !important
+    .is-scrolling-down &
+        opacity: 1
+        transform: translateX(-50%)
     @include media-breakpoint-up(md)
-        .project__page &
+        .projects__page &
             display: block
