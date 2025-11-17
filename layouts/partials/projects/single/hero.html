@@ -1,27 +1,6 @@
 {{- $title := or .Params.header_text .Title -}}
 {{ $share := site.Params.projects.share_links.enabled | default site.Params.share_links.enabled }}
-{{ $image := .Params.image }}
-
-{{ with .Params.contents }}
-  {{ $cover_blocks := where . "html_class" "block-class-cover" }}
-  {{ with $cover_blocks }}
-    {{ range . }}
-      {{ with .data.image }}
-        {{ $image = . }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{/*  {{- partial "header/hero.html" (dict
-  "title" $title
-  "image" $image
-  "sizes" site.Params.image_sizes.sections.projects.hero_single
-  "hero_text_complement" "projects/single/hero/infos.html"
-  "context" .
-  "share" $share
-) -}}  */}}
-
+{{ $image := partial "GetProjectThumbnail" . }}
 
 {{ $summary := .Params.summary | safeHTML }}
 {{ $button := .Params.header_cta }}

@@ -1,0 +1,15 @@
+
+{{ $image := .Params.image }}
+
+{{ with .Params.contents }}
+  {{ $cover_blocks := where . "html_class" "block-class-cover" }}
+  {{ with $cover_blocks }}
+    {{ range . }}
+      {{ with .data.image }}
+        {{ $image = . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return $image }}

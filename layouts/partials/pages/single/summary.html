@@ -1,0 +1,5 @@
+{{- partial "commons/summary-in-content.html" . -}}
+
+{{ if in .context.Params.bodyclass "page-selection" }}
+  {{ partial "taxonomies/term-list-container.html" (dict "taxonomy" "projects") }}
+{{ end }}

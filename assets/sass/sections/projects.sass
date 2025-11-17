@@ -24,34 +24,25 @@
     .media
         border-radius: $images-border-radius
         margin-bottom: $spacing-1
+        &.media--cover
+            display: none
 
 .block-projects--grid,
 .projects--grid,
 .projects
     row-gap: pxToRem(80)
 
-
 .projects--grid
     @include grid(3, xxl, pxToRem(80))
 
 .page-selection
-    .taxonomies-list--dropdown
-        margin-bottom: space(8)
-        .dropdown
-            button
-                @extend .btn
-                padding: pxToRem(10) $spacing-2
-                background: $color-dark-grey
-                &:not([aria-expanded="true"]):hover
-                    background: var(--color-accent)
-                    color: var(--color-text)
-        @include media-breakpoint-up(desktop)
-            gap: space(2)
     .document-content
         display: flex
         flex-direction: column
         .blocks
             order: 2
+    .block-projects--grid
+        margin-top: 0
     .block-chapter.block-chapter--alt_background
         border-top: 1px solid white
         margin-top: var(--block-space-y) !important

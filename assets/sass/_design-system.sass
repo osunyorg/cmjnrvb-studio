@@ -242,12 +242,19 @@ footer#document-footer
         padding-bottom: $spacing-1
 
 .taxonomies-list
+    margin-bottom: space(8)
+    @include media-breakpoint-up(desktop)
+        gap: space(2)
     .dropdown
         --dropdown-background: #{$color-dark-grey}
         --dropdown-border-width: 0px
         button
-            @extend .button
+            @include button
             margin: auto
+            background: $color-dark-grey
+            &:not([aria-expanded="true"]):hover
+                background: var(--color-accent)
+                color: var(--color-text)
         .taxonomy-categories
             border-radius: pxToRem(4)
             ul
@@ -270,4 +277,3 @@ footer#document-footer
 @mixin inline-btn
     display: inline-block
     vertical-align: middle
-
