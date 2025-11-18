@@ -28,27 +28,31 @@ h4, .h4
 .breadcrumb-nav
     @extend .sr-only
 
-a.backtotop
+a.backtotop,
+a.fixed-blur-btn
     @include button
     @include blur-btn
     @include body-text
-    display: none
     background: rgba(0,0,0,0.1) !important
     text-decoration: none !important
     width: pxToRem(100)
     padding-top: pxToRem(10)
     padding-bottom: pxToRem(10)
-    opacity: 0
-    transform: translateX(-50%) translateY(100px)
+    transform: translateX(-50%)
     transition: all $arrow-duration $arrow-ease-transition !important
     z-index: 10
     &:focus, &:hover
         color: var(--color-text) !important
     &:hover
         transform: translateX(-50%) scale(0.95) !important
-    .is-scrolling-down &
-        opacity: 1
-        transform: translateX(-50%)
+
+a.backtotop
+    display: none
+    opacity: 0
+    transform: translateX(-50%) translateY(100px)
     @include media-breakpoint-up(md)
         .projects__page &
             display: block
+    .is-scrolling-down &
+        opacity: 1
+        transform: translateX(-50%)
