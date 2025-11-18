@@ -1,6 +1,7 @@
 .projects__section
     @include light-page
-
+    .document-content
+        z-index: 50
     .projects-archives-header
         margin-bottom: space(4)
 
@@ -35,7 +36,7 @@
                 opacity: 0
                 pointer-events: none
                 position: absolute
-                width: columns(3.5)
+                width: pxToRem(300)
                 left: space(2)
                 top: 100%
                 margin-top: space(2)
