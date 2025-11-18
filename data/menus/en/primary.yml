@@ -15,13 +15,13 @@ items:
   children: []
   path: "/projects"
   file: content/en/projects/_index.html
-- title: About
-  target: "/en/information/"
+- title: Studio
+  target: "/en/studio/"
   kind: page
   new_tab: false
   children: []
-  path: "/pages/information"
-  file: content/en/pages/information/_index.html
+  path: "/pages/studio"
+  file: content/en/pages/studio/_index.html
 - title: Contact
   target: mailto:bonjour@cmjnrvb.net
   kind: url
