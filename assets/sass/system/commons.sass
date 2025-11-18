@@ -42,8 +42,8 @@ a.backtotop
     transform: translateX(-50%) translateY(100px)
     transition: all $arrow-duration $arrow-ease-transition !important
     z-index: 10
-    &:focus
-        color: var(--color-text)
+    &:focus, &:hover
+        color: var(--color-text) !important
     &:hover
         transform: translateX(-50%) scale(0.95) !important
     .is-scrolling-down &
