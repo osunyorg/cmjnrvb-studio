@@ -44,7 +44,9 @@ params:
     sections:
       projects:
         hero_single:
-          desktop:  1964
+          mobile: 600
+          desktop: 1964
+          desktop: 1964
         layouts:
           grid:
             mobile:  500

@@ -17,19 +17,32 @@
             // transition: opacity 0.3s
             position: relative
             border-bottom: 1px solid var(--color-border)
+        &.thumbnail-up
+            .project
+                .media
+                    top: auto
+                    bottom: 100%
         .project
             align-items: center
             justify-content: center
-            padding:  space(4) var(--grid-gutter)
+            padding: space(4) var(--grid-gutter)
             position: relative
+            &-content
+                position: relative
+                > a
+                    @include stretched-link
             &-title
                 @include body-text
-            &-taxonomy ul
-                li
-                    display: inline
-                    &:not(:last-of-type)
-                        &::after
-                            content: ', '
+            &-taxonomy 
+                a
+                    position: relative
+                    z-index: 2
+                ul
+                    li
+                        display: inline
+                        &:not(:last-of-type)
+                            &::after
+                                content: ', '
             &-year time
                 color: var(--color-text)
             .media

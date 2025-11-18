@@ -2,7 +2,6 @@
 
 {{ if and (eq .Kind "term") (eq .Type "projects_categories") }}
   {{ $project_index := site.GetPage "pages/selection" }}
-{{/*  --> envoyer sur la selection  */}}
   {{ with $project_index }}
     <a href="{{ .Permalink }}" class="button button--large fixed-blur-btn">{{ .Title }}</a>
   {{ end }}
