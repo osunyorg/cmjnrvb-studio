@@ -15,6 +15,13 @@ items:
   children: []
   path: "/projects"
   file: content/fr/projects/_index.html
+- title: Images
+  target: "/fr/images/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/images"
+  file: content/fr/pages/images/_index.html
 - title: Studio
   target: "/fr/studio/"
   kind: page
