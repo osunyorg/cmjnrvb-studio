@@ -1,11 +1,5 @@
 %high-hero
     padding-bottom: 0
-    height: calc(100vh - #{$spacing-4})
-    .container,
-    .content,
-    .hero-text,
-    hgroup
-        height: 100%
     .hero-text,
     hgroup
         display: flex
@@ -15,6 +9,17 @@
         justify-content: space-between
         p
             margin-top: 0
+    @include media-breakpoint-down(desktop)
+        margin-bottom: pxToRem(120)
+        h1
+            margin-bottom: pxToRem(212)
+    @include media-breakpoint-up(desktop)
+        height: calc(100vh - #{$spacing-4})
+        .container,
+        .content,
+        .hero-text,
+        hgroup
+            height: 100%
 
 @mixin page-light
     --color-background: #{$color-background-light}
