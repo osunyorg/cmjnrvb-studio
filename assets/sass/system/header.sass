@@ -9,7 +9,18 @@ header#document-header
         li
             a
                 @include link
+    .logo
+        // Cancel default darkmode behavior
+        > img:first-child
+            display: block !important
+        .logo-darkmode
+            display: none !important
 
+        &:hover
+            > img:first-child
+                display: none !important
+            .logo-darkmode
+                display: block !important
     .header-cover
         display: none !important
         // @include container

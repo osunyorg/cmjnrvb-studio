@@ -3,6 +3,10 @@ _merge: deep
 pagination:
   pagerSize: 100
 params:
+  logo:
+    header:
+      default: "/assets/images/logo-cmjnrvb.svg"
+      darkmode: "/assets/images/logo-cmykrgb.svg"
   blocks:
     ignored: "block-class-cover"
   summary:
