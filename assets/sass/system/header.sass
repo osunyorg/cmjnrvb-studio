@@ -29,9 +29,15 @@ header#document-header
         img
             object-fit: cover
             // object-position: top left
+
     .logo:hover ~ .header-cover
         opacity: 1
     
+    @include media-breakpoint-up(md)
+        nav.primary-menu
+            .menu
+                a:not(.active, :hover)
+                    opacity: 0.7
     @include media-breakpoint-down(md)
         transform: none !important
         .primary-menu
@@ -40,7 +46,7 @@ header#document-header
                 html:not(.has-menu-opened) &
                     color: var(--color-text) !important
                 .has-menu-opened &
-                    --color-text: #{$color-informations}
+                    --color-text: #{$color-light}
                 span:first-of-type
                     display: flex
                     align-items: center
@@ -55,8 +61,8 @@ header#document-header
                     content: none !important
         .menu
             --btn-background: var(--color-text)
-            --color-text: #{$color-informations}
-            background: $color-background-informations
+            --color-text: #{$color-light}
+            background: $color-background-light
             bottom: 0
             color: var(--color-text)
             display: flex

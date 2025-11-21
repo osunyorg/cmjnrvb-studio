@@ -16,17 +16,13 @@
         p
             margin-top: 0
 
-@mixin light-page
-    --color-background: #{$color-background-informations}
-    --color-text: #{$color-informations}
+@mixin page-light
+    --color-background: #{$color-background-light}
+    --color-text: #{$color-light}
     header#document-header
         .logo
             img
                 filter: brightness(0.38)
-        nav.primary-menu
-            .menu
-                a:not(.active, :hover)
-                    opacity: 0.7
 
 @mixin inline-btn
     display: inline-block
