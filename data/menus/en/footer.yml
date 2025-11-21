@@ -1,0 +1,32 @@
+---
+title: Footer
+items:
+- title: Homepage
+  target: "/en/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/"
+  file: content/en/_index.html
+- title: Projects
+  target: "/en/selection/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/selection"
+  file: content/en/pages/selection/_index.html
+- title: Index
+  target: "/en/index/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/projects"
+  file: content/en/projects/_index.html
+- title: Studio
+  target: "/en/studio/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/studio"
+  file: content/en/pages/studio/_index.html
+
