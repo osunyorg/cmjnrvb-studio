@@ -16,12 +16,11 @@
     <div class="content">
       <div class="hero-title">
         <h1 {{ $title_attribute }}>{{ partial "PrepareHTML" $title }}</h1>
+        {{ partial "projects/single/hero/infos.html" . }}
         {{ with .Params.subtitle }}
           <p>{{ . }}</p>
         {{ end }}
       </div>
-
-      {{ partial "projects/single/hero/infos.html" . }}
 
       {{ if $image }}
         {{ partial "commons/image-figure.html" (dict

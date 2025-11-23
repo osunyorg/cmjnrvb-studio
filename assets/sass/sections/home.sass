@@ -5,6 +5,7 @@
                 .menu
                     a:not(.active, :hover)
                         opacity: 1
+
     .hero
         @extend %high-hero
         .content
@@ -15,8 +16,8 @@
                     --h1-size: #{$h1-size-desktop}
         @include media-breakpoint-up(md)
             margin-bottom: pxToRem(160)
+
     .block-projects
-        margin-bottom: space(20)
         @include media-breakpoint-up(xxl)
             .projects--grid
                 @include grid(2, false, pxToRem(80))
@@ -28,10 +29,10 @@
                             display: none
                         &.media--cover
                             display: block
+        @include media-breakpoint-up(desktop)
+            margin-bottom: space(20)
 
     .block-call_to_action--no_background
-        margin-bottom: var(--block-space-y)
-        margin-top: space(20)
         .actions
             display: flex
             align-items: baseline
@@ -40,5 +41,8 @@
                 @extend .button--large
                 @extend .button--alt
                 margin: 0
+        @include media-breakpoint-up(desktop)
+            margin-top: space(20)
+
     .block-class-hover-covers
         display: none

@@ -1,7 +1,6 @@
 .taxonomies-list
     margin-bottom: space(8)
-    @include media-breakpoint-up(desktop)
-        gap: space(2)
+    gap: space(2)
     .dropdown
         --dropdown-background: #{$color-dark-grey}
         --dropdown-border-width: 0px
@@ -33,3 +32,7 @@
                             color: var(--color-text)
                             opacity: 1 !important
                             background: none
+    @include media-breakpoint-down(desktop)
+        flex-direction: row
+        .dropdown
+            width: auto

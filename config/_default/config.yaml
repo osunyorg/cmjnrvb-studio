@@ -39,20 +39,22 @@ params:
         disabled: true
     blocks:
       image:
-        desktop:  1964
+        desktop: 1964
       gallery:
         grid:
-          desktop:  978
+          mobile: 500
+          tablet: 978
+          desktop: 978
         large:
-          desktop:  1964
+          desktop: 1964
     sections:
       projects:
         hero_single:
           mobile: 600
-          desktop: 1964
+          tablet: 1280
           desktop: 1964
         layouts:
           grid:
-            mobile:  500
-            tablet:  1964
-            desktop:  1964
+            mobile: 500
+            tablet: 1964
+            desktop: 1964

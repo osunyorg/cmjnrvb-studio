@@ -28,7 +28,13 @@
         .logo
             img
                 filter: brightness(0.38)
-
+        nav.primary-menu
+            .header-button
+                background: rgba(0, 0, 0, 0.2) !important
+                span
+                    color: #{$color-text}
+                    &::before
+                        background: #{$color-text}
 @mixin inline-btn
     display: inline-block
     vertical-align: middle

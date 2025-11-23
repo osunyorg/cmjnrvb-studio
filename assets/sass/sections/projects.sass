@@ -38,6 +38,11 @@
 
 .projects--grid
     @include grid(3, xxl, pxToRem(80))
+    @include media-breakpoint-down(desktop)
+        .project
+            .media
+                margin-left: 0
+                margin-right: 0
 
 .page-selection
     .block-projects--grid
@@ -65,6 +70,14 @@
                 order: -1
                 width: 100%
                 margin-top: $spacing-4
+            .hero-actions
+                .btn
+                    @include button-reset
+                    @include body-text
+                    padding: 0
+                    text-decoration: underline
+                    &:hover
+                        color: var(--color-text)
         .projects-taxonomies
             > li + li
                 margin-top: space(2)
@@ -84,6 +97,11 @@
             .taxonomy-children
                 flex: 1
         @include media-breakpoint-down(desktop)
+            .summary
+                margin-top: space(10)
+            .projects-taxonomies
+                > .terms
+                    @include grid(2)
             figure
                 img
                     aspect-ratio: 1 / 1.3
@@ -124,27 +142,33 @@
                 .hero-actions
                     margin-top: auto
                     grid-row: 2
-                    .btn
-                        @include button-reset
-                        @include body-text
-                        padding: 0
-                        text-decoration: underline
-                        &:hover
-                            color: var(--color-text)
 
     .block-gallery,
     .block-image
         --block-space-y: #{var(--grid-gutter)}
-
-    // .block-projects
-    //     .projects--grid
-    //         @include grid(2, xxl, pxToRem(80))
 
     &.full-width
         .block-gallery
             .gallery
                 @include grid(2)
 
+    @include media-breakpoint-down(desktop)
+        .block-projects
+            .projects--grid
+                display: flex
+                overflow-x: scroll
+                scroll-snap-type: x proximity
+                gap: var(--grid-gutter)
+                > li
+                    scroll-snap-align: start
+                    min-width: 75vw
+                    flex: 75% 1 1
+                    + li
+                        margin-top: 0
+
+
     @include media-breakpoint-up(desktop)
         .lightbox-button
             pointer-events: none
+
+

@@ -3,12 +3,39 @@ header#document-header
         .menu
             li.has-children > a[target="_blank"]
                 @extend .button
-        .header-button
-            @extend .button--large
-            @extend .button--alt
+
         li
             a
                 @include link
+
+        .header-button
+            @extend .button--large
+            @extend .button--alt
+            @include blur-btn
+            padding: pxToRem(17) pxToRem(22)
+            line-height: 1
+
+            span:first-of-type
+                align-items: center
+                display: flex
+                text-transform: none
+                &::before
+                    content: ''
+                    height: $spacing-1
+                    width: $spacing-1
+                    margin-right: space()
+                    background-color: var(--color-text)
+                    border-radius: 50%
+
+            span:last-of-type::before
+                content: none !important
+
+            html:not(.has-menu-opened) &
+                color: var(--color-text) !important
+
+            .has-menu-opened &
+                --color-text: #{$color-light}
+
     .logo
         // Cancel default darkmode behavior
         > img:first-child
@@ -20,6 +47,7 @@ header#document-header
                 display: none !important
             .logo-darkmode
                 display: block !important
+
     .header-cover
         display: none !important
         // @include container
@@ -42,33 +70,15 @@ header#document-header
 
     .logo:hover ~ .header-cover
         opacity: 1
-    
+
     @include media-breakpoint-up(md)
         nav.primary-menu
             .menu
                 a:not(.active, :hover)
                     opacity: 0.7
+
     @include media-breakpoint-down(md)
         transform: none !important
-        .primary-menu
-            .header-button
-                @include blur-btn
-                html:not(.has-menu-opened) &
-                    color: var(--color-text) !important
-                .has-menu-opened &
-                    --color-text: #{$color-light}
-                span:first-of-type
-                    display: flex
-                    align-items: center
-                    &::before
-                        content: ''
-                        height: $spacing-1
-                        width: $spacing-1
-                        margin-right: space()
-                        background-color: var(--color-text)
-                        border-radius: 50%
-                span:last-of-type::before
-                    content: none !important
         .menu
             --btn-background: var(--color-text)
             --color-text: #{$color-light}
