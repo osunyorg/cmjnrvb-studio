@@ -3,15 +3,16 @@
     background: none !important
     .video
         overflow: hidden
-        max-width: columns(8)
         border-radius: space(2)
-        margin: auto
     .block-content
         background: var(--color-background-alt)
         padding-left: 0
         padding-right: 0
         border-radius: space(2)
-
+    @include media-breakpoint-up(desktop)
+        .video
+            max-width: columns(8)
+            margin: auto
     @include in-page-without-sidebar
         .block-content
             display: block
