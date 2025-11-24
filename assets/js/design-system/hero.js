@@ -1,37 +1,19 @@
-import { isMobile } from '../theme/utils/breakpoints';
-
 class PagesHero {
     constructor () {
-        this.page = document.querySelector('.projects__page');
         this.home = document.querySelector('.page__home');
 
-        if ((this.page || this.home) && !isMobile()) {
-            this.reorderElements();
+        if (this.home) {
+            this.setup();
         }
     }
-    
-    reorderElements () {
+
+    setup () {
         this.hero = document.querySelector('.hero');
         this.title = this.hero.querySelector('h1');
         this.heading = this.hero.querySelector('hgroup');
 
-        // if (this.page) {
-            // this.reorderHeading();
-        // }
         if (this.home) {
             this.reorderButton();
-        }
-    }
-
-    reorderHeading() {
-        this.date = this.hero.querySelector('.project-infos');
-        this.content = this.hero.querySelector('.content');
-
-        this.content.prepend(this.title);
-        this.content.prepend(this.date);
-
-        if (this.heading) {
-            this.removeParentTag(this.heading);
         }
     }
 
