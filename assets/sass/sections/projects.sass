@@ -152,6 +152,10 @@
             .gallery
                 @include grid(2)
 
+    @include media-breakpoint-down(xxl)
+        .block-projects
+            .projects--grid
+                @include grid(3)
     @include media-breakpoint-down(desktop)
         .block-projects
             .projects--grid
