@@ -1,4 +1,7 @@
 .block-image
+    figure picture
+        margin-left: 0
+        margin-right: 0
     @include in-page-without-sidebar
         &.image-landscape
             figure picture
@@ -8,6 +11,6 @@
             figure
                 align-items: center
                 justify-content: center
-                &, > button
+                &, > button, > [role="button"]
                     width: auto
                     margin-left: auto
