@@ -79,7 +79,7 @@ header#document-header
             .nav-level-1
                 > li:first-child
                     display: none
-            .menu:has(a.active)
+            .menu:has(li:not(:first-child) a.active)
                 a:not(.active, :hover)
                     opacity: 0.7
 
