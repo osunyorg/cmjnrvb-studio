@@ -83,7 +83,7 @@ header#document-header
                 a:not(.active, :hover)
                     opacity: 0.7
 
-    @include media-breakpoint-down(md)
+    @include media-breakpoint-down(desktop)
         transform: none !important
         .menu
             --btn-background: var(--color-text)
@@ -130,7 +130,7 @@ header#document-header
                         &::after
                             content: none
     
-    @include media-breakpoint-up(md)
+    @include media-breakpoint-up(desktop)
         nav.primary-menu
             .header-button
                 display: none !important

@@ -1,6 +1,6 @@
-class PagesHero {
-    constructor () {
-        this.home = document.querySelector('.page__home');
+class PageHero {
+    constructor (element) {
+        this.home = element;
 
         if (this.home) {
             this.setup();
@@ -32,4 +32,11 @@ class PagesHero {
     }
 }
 
-export default new PagesHero();
+window.osuny = window.osuny || {};
+window.osuny.PageHero = PageHero;
+
+window.osuny.page.registerComponent({
+    name: 'pageHero',
+    selector: '.page__home',
+    klass: window.osuny.PageHero
+});

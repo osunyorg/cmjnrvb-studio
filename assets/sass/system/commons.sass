@@ -1,8 +1,10 @@
 html
-    scroll-behavior: smooth
+    &:not(.is-changing)
+        scroll-behavior: smooth
 
 body
     letter-spacing: -0.01em
+    transition: background-color 0.3s
 
 h1, .h1, h2, .h2, h3, .h3
     letter-spacing: -0.04em
@@ -27,6 +29,19 @@ h4, .h4
 
 .breadcrumb-nav
     @extend .sr-only
+
+.block-gallery,
+.block-image,
+.block-siblings-navigation,
+.hero,
+.project
+    img
+        border-radius: var(--image-border-radius)
+        &.loaded
+            transition: opacity 0.2s
+            opacity: 1
+        &:not(.loaded)
+            opacity: 0
 
 a.backtotop,
 a.fixed-blur-btn
@@ -59,3 +74,4 @@ a.backtotop
     .is-scrolling-down &
         opacity: 1
         transform: translateX(-50%)
+

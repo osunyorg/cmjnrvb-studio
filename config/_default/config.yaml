@@ -1,4 +1,7 @@
-theme: osuny
+theme: 
+  - osuny
+  - osuny-plugin-single-page-application
+
 _merge: deep
 pagination:
   pagerSize: 100
