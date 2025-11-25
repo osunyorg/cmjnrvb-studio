@@ -34,13 +34,15 @@
         .logo
             img
                 filter: brightness(0.38)
-        nav.primary-menu
-            .header-button
-                background: rgba(0, 0, 0, 0.2) !important
-                span
-                    color: #{$color-text}
-                    &::before
-                        background: #{$color-text}
+    a.backtotop,
+    a.fixed-blur-btn,
+    header#document-header nav.primary-menu .header-button
+        background: rgba(0, 0, 0, 0.2) !important
+        span
+            color: #{$color-text}
+            &::before
+                background: #{$color-text}
+
 @mixin inline-btn
     display: inline-block
     vertical-align: middle
@@ -54,3 +56,5 @@
     left: 50%
     transform: translateX(-50%)
     z-index: $zindex-modal
+
+

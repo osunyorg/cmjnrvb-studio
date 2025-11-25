@@ -12,13 +12,14 @@ header#document-header
             @extend .button--large
             @extend .button--alt
             @include blur-btn
-            padding: pxToRem(17) pxToRem(22)
-            line-height: 1
+            width: pxToRem(100)
+            padding: pxToRem(10) pxToRem(22)
 
             span:first-of-type
                 align-items: center
                 display: flex
                 text-transform: none
+                line-height: $body-line-height
                 &::before
                     content: ''
                     height: $spacing-1

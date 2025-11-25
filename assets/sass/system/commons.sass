@@ -33,7 +33,7 @@ a.fixed-blur-btn
     @include button
     @include blur-btn
     @include body-text
-    background: rgba(0,0,0,0.1) !important
+    // background: rgba(0,0,0,0.1) !important
     text-decoration: none !important
     width: pxToRem(100)
     padding-top: pxToRem(10)
@@ -46,15 +46,16 @@ a.fixed-blur-btn
     &:hover
         transform: translateX(-50%) scale(0.95) !important
     @include media-breakpoint-down(md)
-        display: none !important
+        bottom: space(19)
+        font-size: pxToRem(14)
 
 a.backtotop
     display: none
     opacity: 0
     transform: translateX(-50%) translateY(100px)
-    @include media-breakpoint-up(md)
-        .projects__page &
-            display: block
+    // @include media-breakpoint-up(md)
+    .projects__page &
+        display: block
     .is-scrolling-down &
         opacity: 1
         transform: translateX(-50%)
