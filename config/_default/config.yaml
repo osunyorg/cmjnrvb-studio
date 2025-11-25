@@ -3,6 +3,9 @@ _merge: deep
 pagination:
   pagerSize: 100
 params:
+  keycdn:
+    quality:
+      high_ratio: 70
   logo:
     header:
       default: "/assets/images/logo-cmjnrvb.svg"
