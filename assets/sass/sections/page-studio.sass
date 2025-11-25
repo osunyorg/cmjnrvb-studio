@@ -18,15 +18,6 @@
     .blocks
         .block-title
             @include h3
-        .block-call_to_action
-            .call_to_action
-                .actions
-                    a:first-child
-                        // --btn-hover-color: var(--color-text)
-                        --btn-hover-color: var(--color-background-alt)
-                        --btn-hover-background: #{alphaColor($color-accent, 0.85)}
-                        --btn-hover-border: none
-                        --btn-border: none
         .block-gallery--grid
             @include media-breakpoint-up(desktop)
                 .gallery > *

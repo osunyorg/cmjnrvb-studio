@@ -24,6 +24,12 @@
 @mixin page-light
     --color-background: #{$color-background-light}
     --color-text: #{$color-light}
+    --btn-background: var(--color-text)
+    --btn-color: var(--color-background)
+    --btn-hover-color: var(--color-background-alt)
+    --btn-hover-background: #{alphaColor($color-accent, 0.85)}
+    --btn-hover-border: none
+    --btn-border: none
     header#document-header
         .logo
             img
