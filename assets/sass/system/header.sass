@@ -3,14 +3,15 @@ header#document-header
         .menu
             li.has-children > a[target="_blank"]
                 @extend .button
+                @include button-small
 
         li
             a
                 @include link
 
         .header-button
-            @extend .button--large
-            @extend .button--alt
+            @include button-large
+            @include button-alt
             @include blur-btn
             width: pxToRem(100)
             padding: pxToRem(10) pxToRem(22)
@@ -18,6 +19,7 @@ header#document-header
             span:first-of-type
                 align-items: center
                 display: flex
+                justify-content: center
                 text-transform: none
                 line-height: $body-line-height
                 &::before
@@ -82,6 +84,7 @@ header#document-header
         transform: none !important
         .menu
             --btn-background: var(--color-text)
+            --btn-color: #{$color-background-light}
             --color-text: #{$color-light}
             background: $color-background-light
             bottom: 0
