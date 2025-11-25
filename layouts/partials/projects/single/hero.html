@@ -33,9 +33,9 @@
         ) }}
       {{ end }}
 
-      {{ if $image }}
+      {{ with or $image $image_cover }}
         {{ partial "commons/image-figure.html" (dict
-          "image" $image
+          "image" .
           "sizes" site.Params.image_sizes.sections.projects.hero_single
           "lazy" false
           "focusable_figcaption" true

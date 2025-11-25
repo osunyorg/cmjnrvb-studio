@@ -45,6 +45,8 @@ a.fixed-blur-btn
         color: var(--color-text) !important
     &:hover
         transform: translateX(-50%) scale(0.95) !important
+    @include media-breakpoint-down(md)
+        display: none !important
 
 a.backtotop
     display: none
