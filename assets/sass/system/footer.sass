@@ -89,6 +89,9 @@ footer#document-footer
                 gap: space(4)
             .footer-legals
                 width: columns(6)
+    @include media-breakpoint-down(md)
+        padding-bottom: space(30)
+
     @include media-breakpoint-up(md)
         padding-top: $spacing-1
         padding-bottom: $spacing-1

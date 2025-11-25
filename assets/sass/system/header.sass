@@ -1,13 +1,13 @@
 header#document-header
     nav.primary-menu
         .menu
-            li.has-children > a[target="_blank"]
-                @extend .button
-                @include button-small
-
-        li
-            a
-                @include link
+            .nav-level-1
+                > li:last-child > a[target="_blank"]
+                    @extend .button
+                    @include button-small
+            li
+                a
+                    @include link
 
         .header-button
             @include button-large
@@ -76,6 +76,9 @@ header#document-header
 
     @include media-breakpoint-up(md)
         nav.primary-menu
+            .nav-level-1
+                > li:first-child
+                    display: none
             .menu:has(a.active)
                 a:not(.active, :hover)
                     opacity: 0.7
