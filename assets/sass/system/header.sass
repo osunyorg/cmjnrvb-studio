@@ -73,7 +73,7 @@ header#document-header
 
     @include media-breakpoint-up(md)
         nav.primary-menu
-            .menu
+            .menu:has(a.active)
                 a:not(.active, :hover)
                     opacity: 0.7
 

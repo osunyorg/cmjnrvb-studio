@@ -156,6 +156,7 @@
         .block-projects
             .projects--grid
                 @include grid(3)
+
     @include media-breakpoint-down(desktop)
         .block-projects
             .projects--grid
@@ -169,6 +170,10 @@
                     flex: 75% 1 1
                     + li
                         margin-top: 0
+        .block-gallery
+            .gallery
+                display: flex !important
+
 
 
     @include media-breakpoint-up(desktop)

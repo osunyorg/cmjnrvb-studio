@@ -24,7 +24,7 @@
                 li
                     > a
                         @include link
-                        font-size: $btn-font-size-desktop
+                        font-size: var(--btn-font-size)
                         line-height: 1
                         padding: pxToRem(4) pxToRem(12)
                         transition: 0.3s
@@ -36,3 +36,10 @@
         flex-direction: row
         .dropdown
             width: auto
+            .taxonomy-categories
+                width: max-content
+                left: 0
+                right: 0
+            &:last-child
+                .taxonomy-categories
+                    left: auto

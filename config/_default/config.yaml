@@ -44,7 +44,7 @@ params:
         grid:
           mobile: 500
           tablet: 978
-          desktop: 325
+          desktop: 978
         large:
           desktop: 1964
     sections:
