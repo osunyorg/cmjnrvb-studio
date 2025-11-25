@@ -22,13 +22,25 @@
         {{ end }}
       </div>
 
+      {{ $image_cover := .Params.image }}
+      {{ if $image_cover }}
+        {{ partial "commons/image-figure.html" (dict
+          "image" $image_cover
+          "sizes" site.Params.image_sizes.sections.projects.hero_single
+          "lazy" false
+          "focusable_figcaption" true
+          "image_class" "mobile-image"
+        ) }}
+      {{ end }}
+
       {{ if $image }}
         {{ partial "commons/image-figure.html" (dict
-            "image" $image
-            "sizes" site.Params.image_sizes.sections.projects.hero_single
-            "lazy" false
-            "focusable_figcaption" true
-          ) }}
+          "image" $image
+          "sizes" site.Params.image_sizes.sections.projects.hero_single
+          "lazy" false
+          "focusable_figcaption" true
+          "image_class" "desktop-image"
+        ) }}
       {{ end }}
 
       <div class="hero-text">

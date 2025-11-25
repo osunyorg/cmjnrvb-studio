@@ -22,7 +22,6 @@
         time
             @include body-text
     .media
-        border-radius: $images-border-radius
         margin-bottom: $spacing-1
         &.media--cover
             display: none
@@ -70,6 +69,8 @@
                 order: -1
                 width: 100%
                 margin-top: $spacing-4
+                &.desktop-image
+                    display: none
             .hero-actions
                 .btn
                     @include button-reset
@@ -102,15 +103,20 @@
             .projects-taxonomies
                 > .terms
                     @include grid(2)
-            figure
-                img
-                    aspect-ratio: 1 / 1.3
-                    object-fit: cover
+            // figure
+            //     img
+            //         aspect-ratio: 1 / 1.3
+            //         object-fit: cover
         @include media-breakpoint-up(desktop)
             .content
                 position: relative
-            h1
-                max-width: columns(9)
+                h1
+                    max-width: columns(9)
+                figure
+                    &.mobile-image
+                        display: none
+                    &.desktop-image
+                        display: block
             .project-infos
                 width: columns(3)
                 position: absolute
@@ -130,6 +136,10 @@
                     margin-top: 0
                     order: -1
                     width: columns(4)
+                    .terms
+                        ul.taxonomy-children
+                            a
+                                @include body-text
                 .taxonomy-title
                     width: columns(1)
                 .taxonomy-typography,
