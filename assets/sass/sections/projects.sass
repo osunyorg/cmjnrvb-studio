@@ -26,8 +26,6 @@
         &.media--cover
             display: none
     &:hover
-        .media
-            opacity: 0.4
         .project-title
             a
                 @include link
@@ -36,6 +34,13 @@
 .projects--grid,
 .projects
     row-gap: pxToRem(80)
+    .project
+        .media
+            transition: 0.2s opacity
+    &:has(.project:hover)
+        .project:not(:hover)
+            .media
+                opacity: 0.8
 
 .projects--grid
     @include grid(3, xxl, pxToRem(80))
