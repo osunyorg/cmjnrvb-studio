@@ -64,3 +64,11 @@ params:
             mobile: 500
             tablet: 1964
             desktop: 1964
+
+languages:
+  en:
+    params:
+      logo:
+        header:
+          default: "/assets/images/logo-cmykrgb.svg"
+          darkmode: "/assets/images/logo-cmjnrvb.svg"
