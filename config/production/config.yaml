@@ -24,4 +24,4 @@ deployment:
   workers: 4
   targets:
     - name: "production"
-      URL: "s3://cmjnrb-studio.cmjnrvb.osuny.site?endpoint=garage.deuxfleurs.fr&s3ForcePathStyle=true&region=garage&awssdk=v1"
+      URL: "s3://www.cmjnrvb.net?endpoint=garage.deuxfleurs.fr&s3ForcePathStyle=true&region=garage&awssdk=v1"
