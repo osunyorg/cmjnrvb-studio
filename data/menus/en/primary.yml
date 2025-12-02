@@ -40,5 +40,10 @@ items:
   target: mailto:bonjour@cmjnrvb.net
   kind: url
   new_tab: true
-  children: []
+  children:
+  - title: Instagram
+    target: www.instagram.com/cmjn_rvb/
+    kind: url
+    new_tab: true
+    children: []
 
