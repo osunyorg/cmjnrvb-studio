@@ -46,4 +46,9 @@ items:
     kind: url
     new_tab: true
     children: []
+  - title: Linkedin
+    target: https://www.linkedin.com/in/takumi/
+    kind: url
+    new_tab: true
+    children: []
 
