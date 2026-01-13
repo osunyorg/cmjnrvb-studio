@@ -6,6 +6,7 @@ _merge: deep
 pagination:
   pagerSize: 100
 params:
+  plausible: true
   keycdn:
     quality:
       high_ratio: 70
