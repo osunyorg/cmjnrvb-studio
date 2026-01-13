@@ -6,7 +6,7 @@ _merge: deep
 pagination:
   pagerSize: 100
 params:
-  plausible: true
+  plausible: cmjnrvb.net
   keycdn:
     quality:
       high_ratio: 70
