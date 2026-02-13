@@ -2,38 +2,48 @@
 title: Footer
 items:
 - title: Homepage
+  slug: homepage
   target: "/en/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/"
   file: content/en/_index.html
 - title: Projects
+  slug: projects
   target: "/en/selection/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/selection"
   file: content/en/pages/selection/_index.html
 - title: Index
+  slug: index
   target: "/en/index/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/projects"
   file: content/en/projects/_index.html
 - title: Images
+  slug: images
   target: "/en/images/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/images"
   file: content/en/pages/images/_index.html
 - title: Studio
+  slug: studio
   target: "/en/studio/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/studio"
   file: content/en/pages/studio/_index.html
 

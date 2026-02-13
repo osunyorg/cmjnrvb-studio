@@ -2,8 +2,10 @@
 title: Footer contact
 items:
 - title: Contact
+  slug: contact
   target: mailto:bonjour@cmjnrvb.net
   kind: url
   new_tab: true
   children: []
+  descendants_targets: []
 

@@ -2,53 +2,71 @@
 title: Main menu
 items:
 - title: Accueil
+  slug: accueil
   target: "/fr/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/"
   file: content/fr/_index.html
 - title: Projets
+  slug: projets
   target: "/fr/selection/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/selection"
   file: content/fr/pages/selection/_index.html
 - title: Index
+  slug: index
   target: "/fr/projets/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/projects"
   file: content/fr/projects/_index.html
 - title: Images
+  slug: images
   target: "/fr/images/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/images"
   file: content/fr/pages/images/_index.html
 - title: Studio
+  slug: studio
   target: "/fr/studio/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/studio"
   file: content/fr/pages/studio/_index.html
 - title: Contact
+  slug: contact
   target: mailto:bonjour@cmjnrvb.net
   kind: url
   new_tab: true
   children:
   - title: Instagram
+    slug: instagram
     target: https://instagram.com/cmjn_rvb
     kind: url
     new_tab: true
     children: []
+    descendants_targets: []
   - title: LinkedIn
+    slug: linkedin
     target: https://www.linkedin.com/in/takumi/
     kind: url
     new_tab: true
     children: []
+    descendants_targets: []
+  descendants_targets:
+  - https://instagram.com/cmjn_rvb
+  - https://www.linkedin.com/in/takumi/
 
