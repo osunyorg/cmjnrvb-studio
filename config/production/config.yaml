@@ -7,6 +7,11 @@ osuny:
   website:
     id: 07fb5e40-4c7f-4269-913d-a2ed4a5463fc
 
+## PARAMS
+params:
+  _merge: deep
+  plausible: "cmjnrvb.net"
+
 ## LANGUAGE
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
