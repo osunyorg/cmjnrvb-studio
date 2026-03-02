@@ -24,7 +24,7 @@
 
       {{ $image_cover := .Params.image }}
       {{ if $image_cover }}
-        {{ partial "commons/image-figure.html" (dict
+        {{ partial "commons/image/figure.html" (dict
           "image" $image_cover
           "sizes" site.Params.image_sizes.sections.projects.hero_single
           "lazy" false
@@ -34,7 +34,7 @@
       {{ end }}
 
       {{ with or $image $image_cover }}
-        {{ partial "commons/image-figure.html" (dict
+        {{ partial "commons/image/figure.html" (dict
           "image" .
           "sizes" site.Params.image_sizes.sections.projects.hero_single
           "lazy" false
