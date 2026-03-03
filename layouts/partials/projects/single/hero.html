@@ -15,7 +15,7 @@
   <div class="container">
     <div class="content">
       <div class="hero-title">
-        <h1 {{ $title_attribute }}>{{ partial "PrepareHTML" $title }}</h1>
+        <h1 {{ $title_attribute }}>{{ safeHTML $title }}</h1>
         {{ partial "projects/single/hero/infos.html" . }}
         {{ with .Params.subtitle }}
           <p>{{ . }}</p>
@@ -44,9 +44,9 @@
       {{ end }}
 
       <div class="hero-text">
-        {{ $taxonomies_position := partial "GetTaxonomiesPosition" . }}
+        {{ $taxonomies_position := partial "taxonomies/helpers/GetPosition.html" . }}
         {{ if and .Params.taxonomies (eq $taxonomies_position "hero") }}
-          {{ partial "taxonomies/single-list.html" . }}
+          {{ partial "taxonomies/single/list.html" . }}
         {{ end }}
 
         {{ if or $button $share }}
