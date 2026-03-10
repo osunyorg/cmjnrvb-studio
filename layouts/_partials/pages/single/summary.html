@@ -1,4 +1,4 @@
-{{- partial "commons/summary-in-content.html" . -}}
+{{- partial "commons/summary/container.html" . -}}
 
 {{ if in .context.Params.bodyclass "page-selection" }}
   {{ partial "taxonomies/single/term.html" (dict "taxonomy" "projects") }}
