@@ -1,4 +1,4 @@
-{{ partial "footer/backtotop.html" }}
+<a href="#" class="backtotop">{{ i18n "commons.backtotop" }}</a>
 
 {{ if and (eq .Kind "term") (eq .Type "projects_categories") }}
   {{ $project_index := site.GetPage "pages/selection" }}
