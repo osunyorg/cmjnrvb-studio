@@ -11,7 +11,7 @@
   {{ $projects = $projects | complement $archives }}
 {{ end }}
 
-{{ $projects = partial "GetPathSliceFromObjects" $projects }}
+{{ $projects = partial "helpers/objects/helpers/objects/GetPathSlice" $projects }}
 
 <div class="projects">
   {{ partial $layout_partial (dict
