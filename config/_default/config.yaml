@@ -6,6 +6,8 @@ _merge: deep
 pagination:
   pagerSize: 100
 params:
+  debug:
+    productionUrl: https://cmjnrvb.net
   plausible: cmjnrvb.net
   keycdn:
     quality:

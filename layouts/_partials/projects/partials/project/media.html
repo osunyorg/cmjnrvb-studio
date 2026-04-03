@@ -1,11 +1,10 @@
 {{ partial "commons/item/media.html" (dict
-  "image" .image
+  "image" .project.Params.image
   "type" "projects"
   "layout" .layout
-  "context" .context
 ) }}
 
-{{ $image_cover := partial "GetProjectThumbnail" .context }}
+{{ $image_cover := partial "GetProjectThumbnail" .project }}
 
 {{ partial "commons/item/media.html" (dict
   "image" $image_cover
