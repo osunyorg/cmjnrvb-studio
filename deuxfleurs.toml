@@ -13,3 +13,636 @@ Cache-Control = "max-age=31536000, no-transform, public"
 for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 [headers.values]
 Cache-Control = "max-age=31536000, no-transform, public"
+
+[[redirects]]
+from = "/fr/projets/type/website/"
+to = "/fr/projets/type/siteweb/"
+
+[[redirects]]
+from = "/en/projects/"
+to = "/en/index/"
+
+[[redirects]]
+from = "/projects/art/"
+to = "/en/index/sector/art/"
+
+[[redirects]]
+from = "/fr/projets/sector/politic/"
+to = "/fr/projets/secteur/politique/"
+
+[[redirects]]
+from = "/en/projects/2024-excurio/"
+to = "/en/index/2024-excurio/"
+
+[[redirects]]
+from = "/fr/projets/services/graphic-design/"
+to = "/fr/projets/services/design-graphique/"
+
+[[redirects]]
+from = "/en/projects/art-direction/"
+to = "/en/index/services/art-direction/"
+
+[[redirects]]
+from = "/en/projects/2019-mediapart-mobile-application/"
+to = "/en/index/2019-mediapart-mobile-application/"
+
+[[redirects]]
+from = "/en/projects/sector/design/"
+to = "/en/index/sector/design/"
+
+[[redirects]]
+from = "/en/projects/2019-mediapart/"
+to = "/en/index/2019-mediapart/"
+
+[[redirects]]
+from = "/en/projects/services/ux/"
+to = "/en/index/services/ux/"
+
+[[redirects]]
+from = "/en/projects/ux/"
+to = "/en/index/services/ux/"
+
+[[redirects]]
+from = "/fr/projets/web/"
+to = "/fr/projets/type/web/"
+
+[[redirects]]
+from = "/fr/projets/type/publishing/"
+to = "/fr/projets/type/edition/"
+
+[[redirects]]
+from = "/fr/projets/sector/musee/"
+to = "/fr/projets/type/musee/"
+
+[[redirects]]
+from = "/en/projects/2023-olab-photo/"
+to = "/en/index/2023-olab-photo/"
+
+[[redirects]]
+from = "/en/projects/webdesign/"
+to = "/en/index/services/webdesign/"
+
+[[redirects]]
+from = "/fr/projets/secteur/politic/"
+to = "/fr/projets/secteur/politique/"
+
+[[redirects]]
+from = "/projects/ux/"
+to = "/en/index/services/ux/"
+
+[[redirects]]
+from = "/fr/projets/sector/institution/"
+to = "/fr/projets/secteur/institution/"
+
+[[redirects]]
+from = "/en/projects/2020-coupe-au-bol-club/"
+to = "/en/index/2020-coupe-au-bol-club/"
+
+[[redirects]]
+from = "/fr/projets/institution/"
+to = "/fr/projets/secteur/institution/"
+
+[[redirects]]
+from = "/fr/projets/photography/"
+to = "/fr/projets/secteur/photographie/"
+
+[[redirects]]
+from = "/en/projects/2016-france-inter/"
+to = "/en/index/2016-france-inter/"
+
+[[redirects]]
+from = "/fr/projets/services/layout/"
+to = "/fr/projets/services/maquette-et-mise-en-page/"
+
+[[redirects]]
+from = "/en/projects/2018-jouissance-club/"
+to = "/en/index/2018-jouissance-club/"
+
+[[redirects]]
+from = "/en/index/services/identite-visuelle/"
+to = "/en/index/services/visual-identity/"
+
+[[redirects]]
+from = "/en/projects/2024-cite-des-sciences/"
+to = "/en/index/2024-cite-des-sciences/"
+
+[[redirects]]
+from = "/fr/projets/secteur/art/"
+to = "/fr/projets/secteur/art-et-culture/"
+
+[[redirects]]
+from = "/projects/culture-1/"
+to = "/en/index/sector/design/"
+
+[[redirects]]
+from = "/fr/projets/services/art-direction/"
+to = "/fr/projets/services/direction-artistique/"
+
+[[redirects]]
+from = "/fr/projets/2024-roland-decembre/"
+to = "/fr/projets/2023-roland-decembre/"
+
+[[redirects]]
+from = "/fr/information-1/"
+to = "/fr/studio/"
+
+[[redirects]]
+from = "/fr/projets/type/institution/"
+to = "/fr/projets/secteur/institution/"
+
+[[redirects]]
+from = "/team/editors/"
+to = "/en/team/editors/"
+
+[[redirects]]
+from = "/en/projects/services/webdesign/"
+to = "/en/index/services/webdesign/"
+
+[[redirects]]
+from = "/en/projects/services/art-direction/"
+to = "/en/index/services/art-direction/"
+
+[[redirects]]
+from = "/fr/archive/"
+to = "/fr/actualites/"
+
+[[redirects]]
+from = "/en/projects/services/design-system/"
+to = "/en/index/services/design-system/"
+
+[[redirects]]
+from = "/projects/design/"
+to = "/en/index/sector/design/"
+
+[[redirects]]
+from = "/fr/equipe-editoriale/"
+to = "/fr/persons/equipe-editoriale/"
+
+[[redirects]]
+from = "/en/projects/design-system/"
+to = "/en/index/services/design-system/"
+
+[[redirects]]
+from = "/fr/projets/layout/"
+to = "/fr/projets/services/maquette-et-mise-en-page/"
+
+[[redirects]]
+from = "/en/index/sector/photographie/"
+to = "/en/index/sector/photography/"
+
+[[redirects]]
+from = "/en/projects/2020-mk2/"
+to = "/en/index/2020-mk2/"
+
+[[redirects]]
+from = "/fr/projets/sector/photography/"
+to = "/fr/projets/secteur/photographie/"
+
+[[redirects]]
+from = "/fr/projets/secteur/non-profit/"
+to = "/fr/projets/secteur/ong/"
+
+[[redirects]]
+from = "/fr/projets/sector/media/"
+to = "/fr/projets/secteur/medias/"
+
+[[redirects]]
+from = "/en/projects/2017-les-jours/"
+to = "/en/index/2017-les-jours/"
+
+[[redirects]]
+from = "/en/projects/2023-taethir/"
+to = "/en/index/2023-taethir/"
+
+[[redirects]]
+from = "/en/projects/2023-ecole-des-arts-decoratifs-de-paris/"
+to = "/en/index/2023-ecole-des-arts-decoratifs-de-paris/"
+
+[[redirects]]
+from = "/en/projects/sector/education/"
+to = "/en/index/sector/education/"
+
+[[redirects]]
+from = "/fr/projets/food/"
+to = "/fr/projets/secteur/food/"
+
+[[redirects]]
+from = "/projects/design-system/"
+to = "/en/index/services/design-system/"
+
+[[redirects]]
+from = "/projects/"
+to = "/en/index/"
+
+[[redirects]]
+from = "/fr/projets/visual-identity/"
+to = "/fr/projets/services/identite-visuelle/"
+
+[[redirects]]
+from = "/fr/projets/services/print/"
+to = "/fr/projets/type/print/"
+
+[[redirects]]
+from = "/sitemap/"
+to = "/en/sitemap/"
+
+[[redirects]]
+from = "/en/index/sector/recherche/"
+to = "/en/index/sector/research/"
+
+[[redirects]]
+from = "/fr/about/equipe-editoriale/"
+to = "/fr/persons/equipe-editoriale/"
+
+[[redirects]]
+from = "/en/index/type/livre/"
+to = "/en/index/type/book/"
+
+[[redirects]]
+from = "/fr/projets/sector/publishing/"
+to = "/fr/projets/type/edition/"
+
+[[redirects]]
+from = "/en/projects/2019-onf-international/"
+to = "/en/index/2019-onf-international/"
+
+[[redirects]]
+from = "/projects/webdesign/"
+to = "/en/index/services/webdesign/"
+
+[[redirects]]
+from = "/en/projects/education/"
+to = "/en/index/sector/education/"
+
+[[redirects]]
+from = "/en/index/type/reseaux-sociaux/"
+to = "/en/index/type/social-network/"
+
+[[redirects]]
+from = "/projects/sector/"
+to = "/en/index/sector/"
+
+[[redirects]]
+from = "/en/projects/2023-lac-project/"
+to = "/en/index/2023-lac-project/"
+
+[[redirects]]
+from = "/fr/projets/sector/"
+to = "/fr/projets/secteur/"
+
+[[redirects]]
+from = "/en/projects/2022-malo-mangin/"
+to = "/en/index/2022-malo-mangin/"
+
+[[redirects]]
+from = "/fr/projets/type/book/"
+to = "/fr/projets/type/livre/"
+
+[[redirects]]
+from = "/en/projects/interface-design/"
+to = "/en/index/services/interface-design/"
+
+[[redirects]]
+from = "/en/projects/2022-mep/"
+to = "/en/index/2022-mep/"
+
+[[redirects]]
+from = "/en/projects/2024-in-situ/"
+to = "/en/index/2024-in-situ/"
+
+[[redirects]]
+from = "/en/projects/design/"
+to = "/en/index/sector/design/"
+
+[[redirects]]
+from = "/projects/interface-design/"
+to = "/en/index/services/interface-design/"
+
+[[redirects]]
+from = "/posts/"
+to = "/en/posts/"
+
+[[redirects]]
+from = "/fr/about/"
+to = "/fr/persons/"
+
+[[redirects]]
+from = "/fr/information/equipe-editoriale/"
+to = "/fr/persons/equipe-editoriale/"
+
+[[redirects]]
+from = "/en/projects/2018-marie-claire/"
+to = "/en/index/2018-marie-claire/"
+
+[[redirects]]
+from = "/fr/projets/sector/magazine/"
+to = "/fr/projets/type/magazine/"
+
+[[redirects]]
+from = "/en/index/type/siteweb/"
+to = "/en/index/type/website/"
+
+[[redirects]]
+from = "/en/projects/2021-nolwenn-brod/"
+to = "/en/index/2021-nolwenn-brod/"
+
+[[redirects]]
+from = "/en/information/"
+to = "/en/studio/"
+
+[[redirects]]
+from = "/fr/projets/musee/"
+to = "/fr/projets/type/musee/"
+
+[[redirects]]
+from = "/en/projects/2023-roland-decembre/"
+to = "/en/index/2023-roland-decembre/"
+
+[[redirects]]
+from = "/fr/projets/secteur/technology/"
+to = "/fr/projets/secteur/technologie/"
+
+[[redirects]]
+from = "/fr/projets/secteur/photography/"
+to = "/fr/projets/secteur/photographie/"
+
+[[redirects]]
+from = "/projects/art-direction/"
+to = "/en/index/services/art-direction/"
+
+[[redirects]]
+from = "/fr/equipe/equipe-editoriale/"
+to = "/fr/persons/equipe-editoriale/"
+
+[[redirects]]
+from = "/en/projects/2018-shonen/"
+to = "/en/index/2018-shonen/"
+
+[[redirects]]
+from = "/en/projects/2019-mediapart-a-lair-libre/"
+to = "/en/index/2019-mediapart-a-lair-libre/"
+
+[[redirects]]
+from = "/fr/projets/sector/food/"
+to = "/fr/projets/secteur/food/"
+
+[[redirects]]
+from = "/fr/equipe/"
+to = "/fr/persons/"
+
+[[redirects]]
+from = "/fr/projets/sector/art/"
+to = "/fr/projets/secteur/art-et-culture/"
+
+[[redirects]]
+from = "/en/projects/2019-forlandio/"
+to = "/en/index/2019-forlandio/"
+
+[[redirects]]
+from = "/fr/projets/sector/education/"
+to = "/fr/projets/secteur/education/"
+
+[[redirects]]
+from = "/fr/projets/services/app/"
+to = "/fr/projets/type/app/"
+
+[[redirects]]
+from = "/en/projects/2017-headline-brazil/"
+to = "/en/index/2017-headline-brazil/"
+
+[[redirects]]
+from = "/fr/projets/sector/non-profit/"
+to = "/fr/projets/secteur/ong/"
+
+[[redirects]]
+from = "/fr/projets/services/book/"
+to = "/fr/projets/type/livre/"
+
+[[redirects]]
+from = "/fr/projets/sector/danse/"
+to = "/fr/projets/secteur/danse/"
+
+[[redirects]]
+from = "/en/index/type/musee/"
+to = "/en/index/type/museum/"
+
+[[redirects]]
+from = "/en/projects/sector/art/"
+to = "/en/index/sector/art/"
+
+[[redirects]]
+from = "/fr/projets/publishing/"
+to = "/fr/projets/type/edition/"
+
+[[redirects]]
+from = "/projects/services/"
+to = "/en/index/services/"
+
+[[redirects]]
+from = "/accessibility/"
+to = "/en/accessibility/"
+
+[[redirects]]
+from = "/fr/projets/2024-elle/"
+to = "/fr/projets/2025-elle/"
+
+[[redirects]]
+from = "/en/projects/2017-chateau-de-versailles/"
+to = "/en/index/2017-chateau-de-versailles/"
+
+[[redirects]]
+from = "/en/projects/2024-serre-de-la-madone/"
+to = "/en/index/2024-serre-de-la-madone/"
+
+[[redirects]]
+from = "/en/projects/2019-jouissance-club-edition-deluxe/"
+to = "/en/index/2019-jouissance-club-edition-deluxe/"
+
+[[redirects]]
+from = "/privacy-policy/"
+to = "/en/privacy-policy/"
+
+[[redirects]]
+from = "/fr/projets/technology/"
+to = "/fr/projets/secteur/technologie/"
+
+[[redirects]]
+from = "/en/index/2024-elle/"
+to = "/en/index/2025-elle/"
+
+[[redirects]]
+from = "/en/index/sector/politique/"
+to = "/en/index/sector/politic/"
+
+[[redirects]]
+from = "/en/projects/2024-recettes-recits-de-francois-regis-gaudry/"
+to = "/en/index/2024-recettes-recits-de-francois-regis-gaudry/"
+
+[[redirects]]
+from = "/fr/information/"
+to = "/fr/studio/"
+
+[[redirects]]
+from = "/fr/projets/secteur/media/"
+to = "/fr/projets/secteur/medias/"
+
+[[redirects]]
+from = "/fr/projets/graphic-design/"
+to = "/fr/projets/services/design-graphique/"
+
+[[redirects]]
+from = "/en/projects/2020-cgev/"
+to = "/en/index/2020-cgev/"
+
+[[redirects]]
+from = "/en/projects/2024-elle/"
+to = "/en/index/2025-elle/"
+
+[[redirects]]
+from = "/fr/projets/illustration/"
+to = "/fr/projets/services/illustration/"
+
+[[redirects]]
+from = "/team/"
+to = "/en/team/"
+
+[[redirects]]
+from = "/projects/2023-lac-project/"
+to = "/en/index/2023-lac-project/"
+
+[[redirects]]
+from = "/fr/projets/education/"
+to = "/fr/projets/secteur/education/"
+
+[[redirects]]
+from = "/en/index/services/maquette-et-mise-en-page/"
+to = "/en/index/services/layout-design/"
+
+[[redirects]]
+from = "/legal-terms/"
+to = "/en/legal-terms/"
+
+[[redirects]]
+from = "/fr/projets/sector/design/"
+to = "/fr/projets/secteur/design/"
+
+[[redirects]]
+from = "/en/index/type/identite/"
+to = "/en/index/type/identity/"
+
+[[redirects]]
+from = "/fr/projets/website/"
+to = "/fr/projets/type/siteweb/"
+
+[[redirects]]
+from = "/en/projects/2013-centre-pompidou/"
+to = "/en/index/2013-centre-pompidou/"
+
+[[redirects]]
+from = "/en/projects/2024-riviera-botanica/"
+to = "/en/index/2024-riviera-botanica/"
+
+[[redirects]]
+from = "/en/index/sector/technologie/"
+to = "/en/index/sector/technology/"
+
+[[redirects]]
+from = "/en/projects/2019-harvard-the-legacy-of-slavery/"
+to = "/en/index/2019-harvard-the-legacy-of-slavery/"
+
+[[redirects]]
+from = "/fr/projets/logotype/"
+to = "/fr/projets/services/logotype/"
+
+[[redirects]]
+from = "/fr/projets/video/"
+to = "/fr/projets/type/video/"
+
+[[redirects]]
+from = "/fr/projets/sector/education-1/"
+to = "/fr/projets/secteur/medias/"
+
+[[redirects]]
+from = "/projects/education/"
+to = "/en/index/sector/education/"
+
+[[redirects]]
+from = "/en/projects/2020-trois-couleurs/"
+to = "/en/index/2020-trois-couleurs/"
+
+[[redirects]]
+from = "/en/projects/2018-radio-france/"
+to = "/en/index/2018-radio-france/"
+
+[[redirects]]
+from = "/en/projects/2024-cids/"
+to = "/en/index/2024-cids/"
+
+[[redirects]]
+from = "/en/projects/services/interface-design/"
+to = "/en/index/services/interface-design/"
+
+[[redirects]]
+from = "/fr/projets/sector/cinema/"
+to = "/fr/projets/secteur/cinema/"
+
+[[redirects]]
+from = "/fr/projets/danse/"
+to = "/fr/projets/secteur/danse/"
+
+[[redirects]]
+from = "/fr/projets/politic/"
+to = "/fr/projets/secteur/politique/"
+
+[[redirects]]
+from = "/en/projects/2025-sosu-sandwich-club/"
+to = "/en/index/2025-sosu-sandwich-club/"
+
+[[redirects]]
+from = "/fr/projets/non-profit/"
+to = "/fr/projets/secteur/ong/"
+
+[[redirects]]
+from = "/en/projects/services/"
+to = "/en/index/services/"
+
+[[redirects]]
+from = "/en/index/sector/musique/"
+to = "/en/index/sector/music/"
+
+[[redirects]]
+from = "/en/projects/sector/"
+to = "/en/index/sector/"
+
+[[redirects]]
+from = "/fr/projets/sector/technology/"
+to = "/fr/projets/secteur/technologie/"
+
+[[redirects]]
+from = "/fr/projets/services/visual-identity/"
+to = "/fr/projets/services/identite-visuelle/"
+
+[[redirects]]
+from = "/organizations/"
+to = "/en/organizations/"
+
+[[redirects]]
+from = "/fr/projets/2024-sosu-sandwich-club/"
+to = "/fr/projets/2025-sosu-sandwich-club/"
+
+[[redirects]]
+from = "/en/index/sector/ong/"
+to = "/en/index/sector/ngo/"
+
+[[redirects]]
+from = "/en/projects/art/"
+to = "/en/index/sector/art/"
+
+[[redirects]]
+from = "/en/index/services/design-graphique/"
+to = "/en/index/services/graphic-design/"
+
+[[redirects]]
+from = "/fr/projets/magazine/"
+to = "/fr/projets/type/magazine/"
+
