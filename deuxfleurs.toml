@@ -15,634 +15,634 @@ for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 Cache-Control = "max-age=31536000, no-transform, public"
 
 [[redirects]]
-from = "/fr/projets/type/website/"
+from = "/fr/projets/type/website/index.html"
 to = "/fr/projets/type/siteweb/"
 
 [[redirects]]
-from = "/en/projects/"
+from = "/en/projects/index.html"
 to = "/en/index/"
 
 [[redirects]]
-from = "/projects/art/"
+from = "/projects/art/index.html"
 to = "/en/index/sector/art/"
 
 [[redirects]]
-from = "/fr/projets/sector/politic/"
+from = "/fr/projets/sector/politic/index.html"
 to = "/fr/projets/secteur/politique/"
 
 [[redirects]]
-from = "/en/projects/2024-excurio/"
+from = "/en/projects/2024-excurio/index.html"
 to = "/en/index/2024-excurio/"
 
 [[redirects]]
-from = "/fr/projets/services/graphic-design/"
+from = "/fr/projets/services/graphic-design/index.html"
 to = "/fr/projets/services/design-graphique/"
 
 [[redirects]]
-from = "/en/projects/art-direction/"
+from = "/en/projects/art-direction/index.html"
 to = "/en/index/services/art-direction/"
 
 [[redirects]]
-from = "/en/projects/2019-mediapart-mobile-application/"
+from = "/en/projects/2019-mediapart-mobile-application/index.html"
 to = "/en/index/2019-mediapart-mobile-application/"
 
 [[redirects]]
-from = "/en/projects/sector/design/"
+from = "/en/projects/sector/design/index.html"
 to = "/en/index/sector/design/"
 
 [[redirects]]
-from = "/en/projects/2019-mediapart/"
+from = "/en/projects/2019-mediapart/index.html"
 to = "/en/index/2019-mediapart/"
 
 [[redirects]]
-from = "/en/projects/services/ux/"
+from = "/en/projects/services/ux/index.html"
 to = "/en/index/services/ux/"
 
 [[redirects]]
-from = "/en/projects/ux/"
+from = "/en/projects/ux/index.html"
 to = "/en/index/services/ux/"
 
 [[redirects]]
-from = "/fr/projets/web/"
+from = "/fr/projets/web/index.html"
 to = "/fr/projets/type/web/"
 
 [[redirects]]
-from = "/fr/projets/type/publishing/"
+from = "/fr/projets/type/publishing/index.html"
 to = "/fr/projets/type/edition/"
 
 [[redirects]]
-from = "/fr/projets/sector/musee/"
+from = "/fr/projets/sector/musee/index.html"
 to = "/fr/projets/type/musee/"
 
 [[redirects]]
-from = "/en/projects/2023-olab-photo/"
+from = "/en/projects/2023-olab-photo/index.html"
 to = "/en/index/2023-olab-photo/"
 
 [[redirects]]
-from = "/en/projects/webdesign/"
+from = "/en/projects/webdesign/index.html"
 to = "/en/index/services/webdesign/"
 
 [[redirects]]
-from = "/fr/projets/secteur/politic/"
+from = "/fr/projets/secteur/politic/index.html"
 to = "/fr/projets/secteur/politique/"
 
 [[redirects]]
-from = "/projects/ux/"
+from = "/projects/ux/index.html"
 to = "/en/index/services/ux/"
 
 [[redirects]]
-from = "/fr/projets/sector/institution/"
+from = "/fr/projets/sector/institution/index.html"
 to = "/fr/projets/secteur/institution/"
 
 [[redirects]]
-from = "/en/projects/2020-coupe-au-bol-club/"
+from = "/en/projects/2020-coupe-au-bol-club/index.html"
 to = "/en/index/2020-coupe-au-bol-club/"
 
 [[redirects]]
-from = "/fr/projets/institution/"
+from = "/fr/projets/institution/index.html"
 to = "/fr/projets/secteur/institution/"
 
 [[redirects]]
-from = "/fr/projets/photography/"
+from = "/fr/projets/photography/index.html"
 to = "/fr/projets/secteur/photographie/"
 
 [[redirects]]
-from = "/en/projects/2016-france-inter/"
+from = "/en/projects/2016-france-inter/index.html"
 to = "/en/index/2016-france-inter/"
 
 [[redirects]]
-from = "/fr/projets/services/layout/"
+from = "/fr/projets/services/layout/index.html"
 to = "/fr/projets/services/maquette-et-mise-en-page/"
 
 [[redirects]]
-from = "/en/projects/2018-jouissance-club/"
+from = "/en/projects/2018-jouissance-club/index.html"
 to = "/en/index/2018-jouissance-club/"
 
 [[redirects]]
-from = "/en/index/services/identite-visuelle/"
+from = "/en/index/services/identite-visuelle/index.html"
 to = "/en/index/services/visual-identity/"
 
 [[redirects]]
-from = "/en/projects/2024-cite-des-sciences/"
+from = "/en/projects/2024-cite-des-sciences/index.html"
 to = "/en/index/2024-cite-des-sciences/"
 
 [[redirects]]
-from = "/fr/projets/secteur/art/"
+from = "/fr/projets/secteur/art/index.html"
 to = "/fr/projets/secteur/art-et-culture/"
 
 [[redirects]]
-from = "/projects/culture-1/"
+from = "/projects/culture-1/index.html"
 to = "/en/index/sector/design/"
 
 [[redirects]]
-from = "/fr/projets/services/art-direction/"
+from = "/fr/projets/services/art-direction/index.html"
 to = "/fr/projets/services/direction-artistique/"
 
 [[redirects]]
-from = "/fr/projets/2024-roland-decembre/"
+from = "/fr/projets/2024-roland-decembre/index.html"
 to = "/fr/projets/2023-roland-decembre/"
 
 [[redirects]]
-from = "/fr/information-1/"
+from = "/fr/information-1/index.html"
 to = "/fr/studio/"
 
 [[redirects]]
-from = "/fr/projets/type/institution/"
+from = "/fr/projets/type/institution/index.html"
 to = "/fr/projets/secteur/institution/"
 
 [[redirects]]
-from = "/team/editors/"
+from = "/team/editors/index.html"
 to = "/en/team/editors/"
 
 [[redirects]]
-from = "/en/projects/services/webdesign/"
+from = "/en/projects/services/webdesign/index.html"
 to = "/en/index/services/webdesign/"
 
 [[redirects]]
-from = "/en/projects/services/art-direction/"
+from = "/en/projects/services/art-direction/index.html"
 to = "/en/index/services/art-direction/"
 
 [[redirects]]
-from = "/fr/archive/"
+from = "/fr/archive/index.html"
 to = "/fr/actualites/"
 
 [[redirects]]
-from = "/en/projects/services/design-system/"
+from = "/en/projects/services/design-system/index.html"
 to = "/en/index/services/design-system/"
 
 [[redirects]]
-from = "/projects/design/"
+from = "/projects/design/index.html"
 to = "/en/index/sector/design/"
 
 [[redirects]]
-from = "/fr/equipe-editoriale/"
+from = "/fr/equipe-editoriale/index.html"
 to = "/fr/persons/equipe-editoriale/"
 
 [[redirects]]
-from = "/en/projects/design-system/"
+from = "/en/projects/design-system/index.html"
 to = "/en/index/services/design-system/"
 
 [[redirects]]
-from = "/fr/projets/layout/"
+from = "/fr/projets/layout/index.html"
 to = "/fr/projets/services/maquette-et-mise-en-page/"
 
 [[redirects]]
-from = "/en/index/sector/photographie/"
+from = "/en/index/sector/photographie/index.html"
 to = "/en/index/sector/photography/"
 
 [[redirects]]
-from = "/en/projects/2020-mk2/"
+from = "/en/projects/2020-mk2/index.html"
 to = "/en/index/2020-mk2/"
 
 [[redirects]]
-from = "/fr/projets/sector/photography/"
+from = "/fr/projets/sector/photography/index.html"
 to = "/fr/projets/secteur/photographie/"
 
 [[redirects]]
-from = "/fr/projets/secteur/non-profit/"
+from = "/fr/projets/secteur/non-profit/index.html"
 to = "/fr/projets/secteur/ong/"
 
 [[redirects]]
-from = "/fr/projets/sector/media/"
+from = "/fr/projets/sector/media/index.html"
 to = "/fr/projets/secteur/medias/"
 
 [[redirects]]
-from = "/en/projects/2017-les-jours/"
+from = "/en/projects/2017-les-jours/index.html"
 to = "/en/index/2017-les-jours/"
 
 [[redirects]]
-from = "/en/projects/2023-taethir/"
+from = "/en/projects/2023-taethir/index.html"
 to = "/en/index/2023-taethir/"
 
 [[redirects]]
-from = "/en/projects/2023-ecole-des-arts-decoratifs-de-paris/"
+from = "/en/projects/2023-ecole-des-arts-decoratifs-de-paris/index.html"
 to = "/en/index/2023-ecole-des-arts-decoratifs-de-paris/"
 
 [[redirects]]
-from = "/en/projects/sector/education/"
+from = "/en/projects/sector/education/index.html"
 to = "/en/index/sector/education/"
 
 [[redirects]]
-from = "/fr/projets/food/"
+from = "/fr/projets/food/index.html"
 to = "/fr/projets/secteur/food/"
 
 [[redirects]]
-from = "/projects/design-system/"
+from = "/projects/design-system/index.html"
 to = "/en/index/services/design-system/"
 
 [[redirects]]
-from = "/projects/"
+from = "/projects/index.html"
 to = "/en/index/"
 
 [[redirects]]
-from = "/fr/projets/visual-identity/"
+from = "/fr/projets/visual-identity/index.html"
 to = "/fr/projets/services/identite-visuelle/"
 
 [[redirects]]
-from = "/fr/projets/services/print/"
+from = "/fr/projets/services/print/index.html"
 to = "/fr/projets/type/print/"
 
 [[redirects]]
-from = "/sitemap/"
+from = "/sitemap/index.html"
 to = "/en/sitemap/"
 
 [[redirects]]
-from = "/en/index/sector/recherche/"
+from = "/en/index/sector/recherche/index.html"
 to = "/en/index/sector/research/"
 
 [[redirects]]
-from = "/fr/about/equipe-editoriale/"
+from = "/fr/about/equipe-editoriale/index.html"
 to = "/fr/persons/equipe-editoriale/"
 
 [[redirects]]
-from = "/en/index/type/livre/"
+from = "/en/index/type/livre/index.html"
 to = "/en/index/type/book/"
 
 [[redirects]]
-from = "/fr/projets/sector/publishing/"
+from = "/fr/projets/sector/publishing/index.html"
 to = "/fr/projets/type/edition/"
 
 [[redirects]]
-from = "/en/projects/2019-onf-international/"
+from = "/en/projects/2019-onf-international/index.html"
 to = "/en/index/2019-onf-international/"
 
 [[redirects]]
-from = "/projects/webdesign/"
+from = "/projects/webdesign/index.html"
 to = "/en/index/services/webdesign/"
 
 [[redirects]]
-from = "/en/projects/education/"
+from = "/en/projects/education/index.html"
 to = "/en/index/sector/education/"
 
 [[redirects]]
-from = "/en/index/type/reseaux-sociaux/"
+from = "/en/index/type/reseaux-sociaux/index.html"
 to = "/en/index/type/social-network/"
 
 [[redirects]]
-from = "/projects/sector/"
+from = "/projects/sector/index.html"
 to = "/en/index/sector/"
 
 [[redirects]]
-from = "/en/projects/2023-lac-project/"
+from = "/en/projects/2023-lac-project/index.html"
 to = "/en/index/2023-lac-project/"
 
 [[redirects]]
-from = "/fr/projets/sector/"
+from = "/fr/projets/sector/index.html"
 to = "/fr/projets/secteur/"
 
 [[redirects]]
-from = "/en/projects/2022-malo-mangin/"
+from = "/en/projects/2022-malo-mangin/index.html"
 to = "/en/index/2022-malo-mangin/"
 
 [[redirects]]
-from = "/fr/projets/type/book/"
+from = "/fr/projets/type/book/index.html"
 to = "/fr/projets/type/livre/"
 
 [[redirects]]
-from = "/en/projects/interface-design/"
+from = "/en/projects/interface-design/index.html"
 to = "/en/index/services/interface-design/"
 
 [[redirects]]
-from = "/en/projects/2022-mep/"
+from = "/en/projects/2022-mep/index.html"
 to = "/en/index/2022-mep/"
 
 [[redirects]]
-from = "/en/projects/2024-in-situ/"
+from = "/en/projects/2024-in-situ/index.html"
 to = "/en/index/2024-in-situ/"
 
 [[redirects]]
-from = "/en/projects/design/"
+from = "/en/projects/design/index.html"
 to = "/en/index/sector/design/"
 
 [[redirects]]
-from = "/projects/interface-design/"
+from = "/projects/interface-design/index.html"
 to = "/en/index/services/interface-design/"
 
 [[redirects]]
-from = "/posts/"
+from = "/posts/index.html"
 to = "/en/posts/"
 
 [[redirects]]
-from = "/fr/about/"
+from = "/fr/about/index.html"
 to = "/fr/persons/"
 
 [[redirects]]
-from = "/fr/information/equipe-editoriale/"
+from = "/fr/information/equipe-editoriale/index.html"
 to = "/fr/persons/equipe-editoriale/"
 
 [[redirects]]
-from = "/en/projects/2018-marie-claire/"
+from = "/en/projects/2018-marie-claire/index.html"
 to = "/en/index/2018-marie-claire/"
 
 [[redirects]]
-from = "/fr/projets/sector/magazine/"
+from = "/fr/projets/sector/magazine/index.html"
 to = "/fr/projets/type/magazine/"
 
 [[redirects]]
-from = "/en/index/type/siteweb/"
+from = "/en/index/type/siteweb/index.html"
 to = "/en/index/type/website/"
 
 [[redirects]]
-from = "/en/projects/2021-nolwenn-brod/"
+from = "/en/projects/2021-nolwenn-brod/index.html"
 to = "/en/index/2021-nolwenn-brod/"
 
 [[redirects]]
-from = "/en/information/"
+from = "/en/information/index.html"
 to = "/en/studio/"
 
 [[redirects]]
-from = "/fr/projets/musee/"
+from = "/fr/projets/musee/index.html"
 to = "/fr/projets/type/musee/"
 
 [[redirects]]
-from = "/en/projects/2023-roland-decembre/"
+from = "/en/projects/2023-roland-decembre/index.html"
 to = "/en/index/2023-roland-decembre/"
 
 [[redirects]]
-from = "/fr/projets/secteur/technology/"
+from = "/fr/projets/secteur/technology/index.html"
 to = "/fr/projets/secteur/technologie/"
 
 [[redirects]]
-from = "/fr/projets/secteur/photography/"
+from = "/fr/projets/secteur/photography/index.html"
 to = "/fr/projets/secteur/photographie/"
 
 [[redirects]]
-from = "/projects/art-direction/"
+from = "/projects/art-direction/index.html"
 to = "/en/index/services/art-direction/"
 
 [[redirects]]
-from = "/fr/equipe/equipe-editoriale/"
+from = "/fr/equipe/equipe-editoriale/index.html"
 to = "/fr/persons/equipe-editoriale/"
 
 [[redirects]]
-from = "/en/projects/2018-shonen/"
+from = "/en/projects/2018-shonen/index.html"
 to = "/en/index/2018-shonen/"
 
 [[redirects]]
-from = "/en/projects/2019-mediapart-a-lair-libre/"
+from = "/en/projects/2019-mediapart-a-lair-libre/index.html"
 to = "/en/index/2019-mediapart-a-lair-libre/"
 
 [[redirects]]
-from = "/fr/projets/sector/food/"
+from = "/fr/projets/sector/food/index.html"
 to = "/fr/projets/secteur/food/"
 
 [[redirects]]
-from = "/fr/equipe/"
+from = "/fr/equipe/index.html"
 to = "/fr/persons/"
 
 [[redirects]]
-from = "/fr/projets/sector/art/"
+from = "/fr/projets/sector/art/index.html"
 to = "/fr/projets/secteur/art-et-culture/"
 
 [[redirects]]
-from = "/en/projects/2019-forlandio/"
+from = "/en/projects/2019-forlandio/index.html"
 to = "/en/index/2019-forlandio/"
 
 [[redirects]]
-from = "/fr/projets/sector/education/"
+from = "/fr/projets/sector/education/index.html"
 to = "/fr/projets/secteur/education/"
 
 [[redirects]]
-from = "/fr/projets/services/app/"
+from = "/fr/projets/services/app/index.html"
 to = "/fr/projets/type/app/"
 
 [[redirects]]
-from = "/en/projects/2017-headline-brazil/"
+from = "/en/projects/2017-headline-brazil/index.html"
 to = "/en/index/2017-headline-brazil/"
 
 [[redirects]]
-from = "/fr/projets/sector/non-profit/"
+from = "/fr/projets/sector/non-profit/index.html"
 to = "/fr/projets/secteur/ong/"
 
 [[redirects]]
-from = "/fr/projets/services/book/"
+from = "/fr/projets/services/book/index.html"
 to = "/fr/projets/type/livre/"
 
 [[redirects]]
-from = "/fr/projets/sector/danse/"
+from = "/fr/projets/sector/danse/index.html"
 to = "/fr/projets/secteur/danse/"
 
 [[redirects]]
-from = "/en/index/type/musee/"
+from = "/en/index/type/musee/index.html"
 to = "/en/index/type/museum/"
 
 [[redirects]]
-from = "/en/projects/sector/art/"
+from = "/en/projects/sector/art/index.html"
 to = "/en/index/sector/art/"
 
 [[redirects]]
-from = "/fr/projets/publishing/"
+from = "/fr/projets/publishing/index.html"
 to = "/fr/projets/type/edition/"
 
 [[redirects]]
-from = "/projects/services/"
+from = "/projects/services/index.html"
 to = "/en/index/services/"
 
 [[redirects]]
-from = "/accessibility/"
+from = "/accessibility/index.html"
 to = "/en/accessibility/"
 
 [[redirects]]
-from = "/fr/projets/2024-elle/"
+from = "/fr/projets/2024-elle/index.html"
 to = "/fr/projets/2025-elle/"
 
 [[redirects]]
-from = "/en/projects/2017-chateau-de-versailles/"
+from = "/en/projects/2017-chateau-de-versailles/index.html"
 to = "/en/index/2017-chateau-de-versailles/"
 
 [[redirects]]
-from = "/en/projects/2024-serre-de-la-madone/"
+from = "/en/projects/2024-serre-de-la-madone/index.html"
 to = "/en/index/2024-serre-de-la-madone/"
 
 [[redirects]]
-from = "/en/projects/2019-jouissance-club-edition-deluxe/"
+from = "/en/projects/2019-jouissance-club-edition-deluxe/index.html"
 to = "/en/index/2019-jouissance-club-edition-deluxe/"
 
 [[redirects]]
-from = "/privacy-policy/"
+from = "/privacy-policy/index.html"
 to = "/en/privacy-policy/"
 
 [[redirects]]
-from = "/fr/projets/technology/"
+from = "/fr/projets/technology/index.html"
 to = "/fr/projets/secteur/technologie/"
 
 [[redirects]]
-from = "/en/index/2024-elle/"
+from = "/en/index/2024-elle/index.html"
 to = "/en/index/2025-elle/"
 
 [[redirects]]
-from = "/en/index/sector/politique/"
+from = "/en/index/sector/politique/index.html"
 to = "/en/index/sector/politic/"
 
 [[redirects]]
-from = "/en/projects/2024-recettes-recits-de-francois-regis-gaudry/"
+from = "/en/projects/2024-recettes-recits-de-francois-regis-gaudry/index.html"
 to = "/en/index/2024-recettes-recits-de-francois-regis-gaudry/"
 
 [[redirects]]
-from = "/fr/information/"
+from = "/fr/information/index.html"
 to = "/fr/studio/"
 
 [[redirects]]
-from = "/fr/projets/secteur/media/"
+from = "/fr/projets/secteur/media/index.html"
 to = "/fr/projets/secteur/medias/"
 
 [[redirects]]
-from = "/fr/projets/graphic-design/"
+from = "/fr/projets/graphic-design/index.html"
 to = "/fr/projets/services/design-graphique/"
 
 [[redirects]]
-from = "/en/projects/2020-cgev/"
+from = "/en/projects/2020-cgev/index.html"
 to = "/en/index/2020-cgev/"
 
 [[redirects]]
-from = "/en/projects/2024-elle/"
+from = "/en/projects/2024-elle/index.html"
 to = "/en/index/2025-elle/"
 
 [[redirects]]
-from = "/fr/projets/illustration/"
+from = "/fr/projets/illustration/index.html"
 to = "/fr/projets/services/illustration/"
 
 [[redirects]]
-from = "/team/"
+from = "/team/index.html"
 to = "/en/team/"
 
 [[redirects]]
-from = "/projects/2023-lac-project/"
+from = "/projects/2023-lac-project/index.html"
 to = "/en/index/2023-lac-project/"
 
 [[redirects]]
-from = "/fr/projets/education/"
+from = "/fr/projets/education/index.html"
 to = "/fr/projets/secteur/education/"
 
 [[redirects]]
-from = "/en/index/services/maquette-et-mise-en-page/"
+from = "/en/index/services/maquette-et-mise-en-page/index.html"
 to = "/en/index/services/layout-design/"
 
 [[redirects]]
-from = "/legal-terms/"
+from = "/legal-terms/index.html"
 to = "/en/legal-terms/"
 
 [[redirects]]
-from = "/fr/projets/sector/design/"
+from = "/fr/projets/sector/design/index.html"
 to = "/fr/projets/secteur/design/"
 
 [[redirects]]
-from = "/en/index/type/identite/"
+from = "/en/index/type/identite/index.html"
 to = "/en/index/type/identity/"
 
 [[redirects]]
-from = "/fr/projets/website/"
+from = "/fr/projets/website/index.html"
 to = "/fr/projets/type/siteweb/"
 
 [[redirects]]
-from = "/en/projects/2013-centre-pompidou/"
+from = "/en/projects/2013-centre-pompidou/index.html"
 to = "/en/index/2013-centre-pompidou/"
 
 [[redirects]]
-from = "/en/projects/2024-riviera-botanica/"
+from = "/en/projects/2024-riviera-botanica/index.html"
 to = "/en/index/2024-riviera-botanica/"
 
 [[redirects]]
-from = "/en/index/sector/technologie/"
+from = "/en/index/sector/technologie/index.html"
 to = "/en/index/sector/technology/"
 
 [[redirects]]
-from = "/en/projects/2019-harvard-the-legacy-of-slavery/"
+from = "/en/projects/2019-harvard-the-legacy-of-slavery/index.html"
 to = "/en/index/2019-harvard-the-legacy-of-slavery/"
 
 [[redirects]]
-from = "/fr/projets/logotype/"
+from = "/fr/projets/logotype/index.html"
 to = "/fr/projets/services/logotype/"
 
 [[redirects]]
-from = "/fr/projets/video/"
+from = "/fr/projets/video/index.html"
 to = "/fr/projets/type/video/"
 
 [[redirects]]
-from = "/fr/projets/sector/education-1/"
+from = "/fr/projets/sector/education-1/index.html"
 to = "/fr/projets/secteur/medias/"
 
 [[redirects]]
-from = "/projects/education/"
+from = "/projects/education/index.html"
 to = "/en/index/sector/education/"
 
 [[redirects]]
-from = "/en/projects/2020-trois-couleurs/"
+from = "/en/projects/2020-trois-couleurs/index.html"
 to = "/en/index/2020-trois-couleurs/"
 
 [[redirects]]
-from = "/en/projects/2018-radio-france/"
+from = "/en/projects/2018-radio-france/index.html"
 to = "/en/index/2018-radio-france/"
 
 [[redirects]]
-from = "/en/projects/2024-cids/"
+from = "/en/projects/2024-cids/index.html"
 to = "/en/index/2024-cids/"
 
 [[redirects]]
-from = "/en/projects/services/interface-design/"
+from = "/en/projects/services/interface-design/index.html"
 to = "/en/index/services/interface-design/"
 
 [[redirects]]
-from = "/fr/projets/sector/cinema/"
+from = "/fr/projets/sector/cinema/index.html"
 to = "/fr/projets/secteur/cinema/"
 
 [[redirects]]
-from = "/fr/projets/danse/"
+from = "/fr/projets/danse/index.html"
 to = "/fr/projets/secteur/danse/"
 
 [[redirects]]
-from = "/fr/projets/politic/"
+from = "/fr/projets/politic/index.html"
 to = "/fr/projets/secteur/politique/"
 
 [[redirects]]
-from = "/en/projects/2025-sosu-sandwich-club/"
+from = "/en/projects/2025-sosu-sandwich-club/index.html"
 to = "/en/index/2025-sosu-sandwich-club/"
 
 [[redirects]]
-from = "/fr/projets/non-profit/"
+from = "/fr/projets/non-profit/index.html"
 to = "/fr/projets/secteur/ong/"
 
 [[redirects]]
-from = "/en/projects/services/"
+from = "/en/projects/services/index.html"
 to = "/en/index/services/"
 
 [[redirects]]
-from = "/en/index/sector/musique/"
+from = "/en/index/sector/musique/index.html"
 to = "/en/index/sector/music/"
 
 [[redirects]]
-from = "/en/projects/sector/"
+from = "/en/projects/sector/index.html"
 to = "/en/index/sector/"
 
 [[redirects]]
-from = "/fr/projets/sector/technology/"
+from = "/fr/projets/sector/technology/index.html"
 to = "/fr/projets/secteur/technologie/"
 
 [[redirects]]
-from = "/fr/projets/services/visual-identity/"
+from = "/fr/projets/services/visual-identity/index.html"
 to = "/fr/projets/services/identite-visuelle/"
 
 [[redirects]]
-from = "/organizations/"
+from = "/organizations/index.html"
 to = "/en/organizations/"
 
 [[redirects]]
-from = "/fr/projets/2024-sosu-sandwich-club/"
+from = "/fr/projets/2024-sosu-sandwich-club/index.html"
 to = "/fr/projets/2025-sosu-sandwich-club/"
 
 [[redirects]]
-from = "/en/index/sector/ong/"
+from = "/en/index/sector/ong/index.html"
 to = "/en/index/sector/ngo/"
 
 [[redirects]]
-from = "/en/projects/art/"
+from = "/en/projects/art/index.html"
 to = "/en/index/sector/art/"
 
 [[redirects]]
-from = "/en/index/services/design-graphique/"
+from = "/en/index/services/design-graphique/index.html"
 to = "/en/index/services/graphic-design/"
 
 [[redirects]]
-from = "/fr/projets/magazine/"
+from = "/fr/projets/magazine/index.html"
 to = "/fr/projets/type/magazine/"
 
