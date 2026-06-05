@@ -40,6 +40,8 @@ params:
       taxonomies:
         position: hero
         show_name: true
+      meta:
+        position: none
     share_links:
       enabled: false
   image_sizes:

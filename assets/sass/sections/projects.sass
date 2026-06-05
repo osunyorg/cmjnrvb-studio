@@ -88,11 +88,15 @@
                         color: var(--color-text)
                         text-decoration-color: rgba(255, 255, 255, 0.6)
         .projects-taxonomies
+            @include list-reset
+            .terms
+                display: flex
             > li + li
                 margin-top: space(2)
             > li ul
                 text-align: left
                 display: block
+                padding-left: 0
                 li, a
                     display: inline
                 li:not(:last-child)
@@ -101,8 +105,6 @@
             .terms
                 justify-content: flex-start
                 gap: var(--grid-gutter)
-            .taxonomy-title
-                @include body-text
             .taxonomy-children
                 flex: 1
         @include media-breakpoint-down(desktop)

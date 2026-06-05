@@ -16,7 +16,9 @@
     <div class="content">
       <div class="hero-title">
         <h1 {{ $title_attribute }}>{{ safeHTML $title }}</h1>
-        {{ partial "projects/single/hero/infos.html" . }}
+        <div class="project-infos">
+          <time class="year" datetime="{{ .Params.year }}">{{ .Params.year }}</time>
+        </div>
         {{ with .Params.subtitle }}
           <p>{{ . }}</p>
         {{ end }}
