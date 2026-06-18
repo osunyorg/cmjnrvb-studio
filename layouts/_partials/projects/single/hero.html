@@ -46,10 +46,7 @@
       {{ end }}
 
       <div class="hero-text">
-        {{ $taxonomies_position := partial "taxonomies/helpers/GetPosition.html" . }}
-        {{ if and .Params.taxonomies (eq $taxonomies_position "hero") }}
-          {{ partial "taxonomies/single/list.html" . }}
-        {{ end }}
+        {{ partial "taxonomies/single/list.html" . }}
 
         {{ if or $button $share }}
           <div class="hero-actions">
