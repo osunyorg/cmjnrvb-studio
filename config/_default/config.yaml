@@ -37,9 +37,6 @@ params:
         categories: false
         summary: false
     single:
-      taxonomies:
-        position: hero
-        show_name: true
       meta:
         position: none
     share_links:
