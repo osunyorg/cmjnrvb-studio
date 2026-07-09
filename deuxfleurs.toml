@@ -299,6 +299,10 @@ from = "/fr/projets/type/book/index.html"
 to = "/fr/projets/type/livre/"
 
 [[redirects]]
+from = "/fr/projets/2026-taethir-2/index.html"
+to = "/fr/projets/2026-taethir-2026/"
+
+[[redirects]]
 from = "/en/projects/interface-design/index.html"
 to = "/en/index/services/interface-design/"
 
