@@ -8,6 +8,9 @@ archives:
 commons:
   backtotop: Top
   credit: Construit avec <a href="https://www.osuny.org/" title="Osuny - lien externe" target="_blank" rel="noreferrer">Osuny</a>
+  menu:
+    title: 
+      close: Menu
 footer:
   credit: © 2024 cmjnrvb studio
 projects:

@@ -16,9 +16,8 @@ header#document-header
             width: pxToRem(100)
             padding: pxToRem(10) pxToRem(22)
 
-            span:first-of-type
+            .button-title
                 align-items: center
-                display: flex
                 justify-content: center
                 text-transform: none
                 line-height: $body-line-height
@@ -29,6 +28,8 @@ header#document-header
                     margin-right: space()
                     background-color: var(--color-text)
                     border-radius: 50%
+                &--open
+                    display: flex
 
             span:last-of-type::before
                 content: none !important
@@ -38,6 +39,8 @@ header#document-header
 
             .has-menu-opened &
                 --color-text: #{$color-light}
+                .button-title--close
+                    display: flex
 
     .logo
         // Cancel default darkmode behavior
