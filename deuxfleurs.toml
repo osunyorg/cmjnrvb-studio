@@ -311,6 +311,10 @@ from = "/en/projects/2022-mep/index.html"
 to = "/en/index/2022-mep/"
 
 [[redirects]]
+from = "/fr/projets/2026-read-1/index.html"
+to = "/fr/projets/2026-osuny/"
+
+[[redirects]]
 from = "/en/projects/2024-in-situ/index.html"
 to = "/en/index/2024-in-situ/"
 
